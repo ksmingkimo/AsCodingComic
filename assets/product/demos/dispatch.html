@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>资源调度 — 弟子王五</title>
+<link rel="stylesheet" href="../raw/css/dashboard.css">
+<link rel="stylesheet" href="demo-common.css">
+</head>
+<body>
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-brand">
+    <h2>Sunlike ERP</h2>
+    <div class="brand-sub">报表查询系统</div>
+  </div>
+  <div class="sidebar-user">
+    <div class="avatar" id="userAvatar">护</div>
+    <span id="userName">护法（执法堂）</span>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="nav-item">报表查询</div>
+    <div class="nav-item">考勤看板</div>
+    <div class="nav-item active">资源调度</div>
+    <div class="nav-item">人效画像</div>
+  </nav>
+</aside>
+<main class="main-content">
+  <header class="content-header">
+    <h3>资源调度 — 弟子王五</h3>
+    <div class="header-actions">
+      <button class="btn btn-secondary btn-sm">刷新</button>
+    </div>
+  </header>
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-label">挂职部门</div>
+      <div class="kpi-value">5</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">在岗登记</div>
+      <div class="kpi-value warn">5 处全勤</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">月例发放</div>
+      <div class="kpi-value">5 份</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">实际产出</div>
+      <div class="kpi-value danger">0</div>
+    </div>
+  </div>
+  <div class="chart-card">
+    <div class="chart-title">部门占用率</div>
+    <div class="bar-row"><span class="bar-label">丹房</span><div class="bar-track"><div class="bar-fill amber" style="width:100%"></div></div><span class="badge badge-warning">全勤</span></div>
+    <div class="bar-row"><span class="bar-label">器房</span><div class="bar-track"><div class="bar-fill amber" style="width:100%"></div></div><span class="badge badge-warning">全勤</span></div>
+    <div class="bar-row"><span class="bar-label">剑阁</span><div class="bar-track"><div class="bar-fill amber" style="width:100%"></div></div><span class="badge badge-warning">全勤</span></div>
+    <div class="bar-row"><span class="bar-label">符堂</span><div class="bar-track"><div class="bar-fill amber" style="width:100%"></div></div><span class="badge badge-warning">全勤</span></div>
+    <div class="bar-row"><span class="bar-label">藏经阁</span><div class="bar-track"><div class="bar-fill amber" style="width:100%"></div></div><span class="badge badge-warning">全勤</span></div>
+  </div>
+  <div class="table-container" style="margin:0 var(--space-xl)">
+    <div class="table-toolbar">
+      <span class="table-info">调度记录 · <strong>5 条</strong></span>
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr><th>部门</th><th>借调登记时间</th><th>需求说明</th><th>状态</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>丹房</td><td>三月初三</td><td>我也需要他</td><td><span class="badge badge-warning">同时在岗</span></td></tr>
+          <tr><td>器房</td><td>三月初三</td><td>我也需要他</td><td><span class="badge badge-warning">同时在岗</span></td></tr>
+          <tr><td>剑阁</td><td>三月初三</td><td>我也需要他</td><td><span class="badge badge-warning">同时在岗</span></td></tr>
+          <tr><td>符堂</td><td>三月初三</td><td>我也需要他</td><td><span class="badge badge-warning">同时在岗</span></td></tr>
+          <tr><td>藏经阁</td><td>三月初三</td><td>我也需要他</td><td><span class="badge badge-warning">同时在岗</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="callout">五个部门，写的都是同一句话——「我也需要他」</div>
+</main>
+</body>
+</html>

@@ -1,0 +1,45 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Dialogue,Microsoft YaHei,48,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,2,1,2,30,30,56,1
+Style: FloralTitle,SimHei,46,&H0000D7FF,&H0000D7FF,&H000000FF,&H80000000,-1,0,0,0,100,100,0,0,1,4,1,5,0,0,0,1
+Style: FloralNote,SimHei,46,&H003BEBFF,&H003BEBFF,&H000000FF,&H80000000,-1,0,0,0,100,100,0,0,1,4,1,5,0,0,0,1
+Style: FloralImpact,SimHei,46,&H00FFFFFF,&H00FFFFFF,&H000000FF,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,5,0,0,0,1
+Style: FloralSlogan,SimHei,68,&H0000D7FF,&H0000D7FF,&H000000FF,&H80000000,-1,0,0,0,100,100,0,0,1,4,3,5,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.20,0:00:03.54,Dialogue,,0,0,0,,执法堂最近盯上了一桩怪事——关于弟子王五。
+Dialogue: 0,0:00:00.30,0:00:02.80,FloralTitle,,0,0,0,,{\an5\pos(960,110)}执法堂的怪事
+Dialogue: 0,0:00:03.80,0:00:05.98,Dialogue,,0,0,0,,考勤册上，他一天没缺……
+Dialogue: 0,0:00:05.98,0:00:07.97,Dialogue,,0,0,0,,修炼打卡，周周不落……
+Dialogue: 0,0:00:07.97,0:00:11.60,Dialogue,,0,0,0,,可巡山弟子报：他在千里外的灵泉泡温泉？
+Dialogue: 0,0:00:11.60,0:00:14.55,Dialogue,,0,0,0,,五个部门的花名册上——都有他的名字！
+Dialogue: 0,0:00:14.65,0:00:17.98,Dialogue,,0,0,0,,宗主，弟子王五……怕是会分身术。
+Dialogue: 0,0:00:18.08,0:00:21.22,Dialogue,,0,0,0,,分身术？！我天玄宗何时有这等神通！
+Dialogue: 0,0:00:21.32,0:00:27.02,Dialogue,,0,0,0,,五处挂职、五份月例、考勤还全勤——不是分身，是什么？
+Dialogue: 0,0:00:27.12,0:00:31.89,Dialogue,,0,0,0,,查！把他的档案给我调出来——我倒要看看，这王五有几副面孔！
+Dialogue: 0,0:00:31.99,0:00:36.63,Dialogue,,0,0,0,,调度记录上，五个部门写的都是同一句话——『我也需要他』。
+Dialogue: 0,0:00:36.73,0:00:39.73,Dialogue,,0,0,0,,人人都说需要他——那他到底在给谁干活？！
+Dialogue: 0,0:00:39.83,0:00:44.96,Dialogue,,0,0,0,,每个部门都按全勤给他发月例——钱没少花，活没人干。
+Dialogue: 0,0:00:45.11,0:00:51.08,Dialogue,,0,0,0,,上回是五个金牌弟子被拆去杂务……这回倒好，一个人被五个部门拆着用！
+Dialogue: 0,0:00:45.41,0:00:48.01,FloralTitle,,0,0,0,,{\an5\pos(960,110)}SUNLIKE 智能财务分析报表
+Dialogue: 0,0:00:51.18,0:00:53.67,Dialogue,,0,0,0,,这一次，宗主自己把神器打开了——
+Dialogue: 0,0:00:53.77,0:00:56.56,Dialogue,,0,0,0,,考勤不会说谎——但考勤只记了『到了』。
+Dialogue: 0,0:00:54.17,0:00:56.57,FloralNote,,0,0,0,,{\an5\pos(300,130)}考勤 100% · 只记了『到了』
+Dialogue: 0,0:00:56.67,0:01:00.54,Dialogue,,0,0,0,,五个部门，各自都『需要他』——却没人管他到底做了什么。
+Dialogue: 0,0:00:57.07,0:00:59.47,FloralNote,,0,0,0,,{\an5\pos(1640,890)}5 个部门 · 同一句『我也需要他』
+Dialogue: 0,0:01:00.64,0:01:03.89,Dialogue,,0,0,0,,五处挂职，处处幽灵——什么，都没做成。
+Dialogue: 0,0:01:01.04,0:01:03.44,FloralImpact,,0,0,0,,{\an5\pos(1640,840)}五处挂职 · 产出 0
+Dialogue: 0,0:01:03.99,0:01:05.29,FloralImpact,,0,0,0,,{\an5\pos(960,840)}一个人，五个部门，零产出
+Dialogue: 0,0:01:05.09,0:01:08.50,Dialogue,,0,0,0,,从今日起，人事调配一律过报表调度！
+Dialogue: 0,0:01:08.60,0:01:11.20,Dialogue,,0,0,0,,再有人抢弟子——扣他三个月月例！
+Dialogue: 0,0:01:11.30,0:01:13.39,Dialogue,,0,0,0,,这就是没有资源调度的代价
+Dialogue: 0,0:01:11.40,0:01:14.20,FloralSlogan,,0,0,0,,{\an5\pos(960,400)}SUNLIKE 智能财务分析报表
+Dialogue: 0,0:01:12.20,0:01:14.30,FloralSlogan,,0,0,0,,{\an5\pos(960,640)}发现你看不见的真相

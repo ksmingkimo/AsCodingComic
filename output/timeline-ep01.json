@@ -1,0 +1,874 @@
+{
+  "meta": {
+    "episode": 1,
+    "title": "第一集：为什么我的弟子在修仙排行榜上消失了",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "scenes": [
+    {
+      "id": "s01-opener",
+      "type": "image",
+      "startMs": 0,
+      "durMs": 8000,
+      "cameraMode": "zoomIn",
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.12,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "transition": {
+        "name": "fade",
+        "durMs": 400
+      },
+      "image": {
+        "file": "s01-opener.png",
+        "prompt": {
+          "zh": "夜色中的天玄宗山门，山门上方悬挂一块古旧木匾，匾上三个金色大字「天玄宗」写得清晰工整。乌云压顶，紫色雾气弥漫，石阶空无一人，诡异压抑的氛围，构图主体山门居中。画面内除牌匾上的「天玄宗」三个字外，不得出现任何其他文字。",
+          "en": "Tianxuan Sect mountain gate at night under ominous dark clouds and drifting purple mist, empty stone steps, eerie unsettling atmosphere, gate centered. Above the gate hangs an ancient wooden plaque painted with exactly three large gold Chinese characters 天玄宗 (the sect name, written clearly and correctly). NO other text, letters or signs anywhere else in the frame."
+        }
+      },
+      "sfx": [
+        "wind"
+      ],
+      "video": {
+        "file": "s01-opener.mp4",
+        "sourceImage": "s01-opener.png",
+        "actionPrompt": {
+          "en": "Cinematic live-action shot, 35mm film look: heavy purple mist slowly drifting across the mountain gate of the Tianxuan Sect at night, dark clouds rolling overhead, wind blowing through pine trees, lanterns swaying gently, empty stone steps. Slow eerie atmosphere with subtle natural motion. Steady camera. No text, no watermark, no subtitles, no people."
+        }
+      },
+      "audioEvents": [
+        {
+          "role": "narrator",
+          "text": "宗门里发生了很多诡异的事……",
+          "file": "s01-opener-0.mp3",
+          "startMs": 300,
+          "durMs": 2414
+        }
+      ],
+      "floralEvents": [
+        {
+          "text": "天玄宗",
+          "style": "title",
+          "pos": "top-center",
+          "startMs": 300,
+          "durMs": 2500
+        }
+      ]
+    },
+    {
+      "id": "s02-montage",
+      "type": "montage",
+      "startMs": 7600,
+      "durMs": 7548,
+      "cameraMode": "static",
+      "camera": {
+        "mode": "static",
+        "startZoom": 1,
+        "endZoom": 1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "transition": {
+        "name": "fade",
+        "durMs": 400
+      },
+      "image": {
+        "file": "s02-montage",
+        "altImages": [
+          {
+            "file": "s02a-money.png",
+            "camera": {
+              "mode": "zoomIn",
+              "startZoom": 1,
+              "endZoom": 1.18,
+              "startFrac": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "endFrac": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "prompt": {
+              "zh": "宗门宝库内景，一只原本鼓鼓的灵石袋瘪了，灵石散落一地，一束惨白月光从上方照下，无人物，搞笑漫画氛围",
+              "en": "Inside a dim treasure vault of a cultivation sect, a bulging spirit-stone pouch now shriveled and empty, spirit stones scattered on the floor, a beam of cold pale moonlight from above, comedic mood, no people"
+            }
+          },
+          {
+            "file": "s02b-buff.png",
+            "camera": {
+              "mode": "zoomIn",
+              "startZoom": 1,
+              "endZoom": 1.18,
+              "startFrac": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "endFrac": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "prompt": {
+              "zh": "一名年轻弟子突然爆发出刺眼金光，衣袍和纸张被气浪吹飞，背景是模糊的围观人群，无清晰人脸，夸张漫画效果",
+              "en": "A young disciple in sect robes suddenly erupting with blinding golden aura, robes and papers blown away by the shockwave, blurred shocked onlookers in background, no clear faces, exaggerated comedic effect"
+            }
+          },
+          {
+            "file": "s02c-leave.png",
+            "camera": {
+              "mode": "zoomIn",
+              "startZoom": 1,
+              "endZoom": 1.18,
+              "startFrac": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "endFrac": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "prompt": {
+              "zh": "一名弟子的背影，背着行囊沿山路走下宗门，黄昏孤寂的光线，看不见脸，落寞氛围",
+              "en": "A disciple seen from behind walking down a mountain path away from the sect with a travel bundle on his back, lonely dusk lighting, no visible face, melancholic mood"
+            }
+          },
+          {
+            "file": "s02d-ledger.png",
+            "camera": {
+              "mode": "zoomIn",
+              "startZoom": 1,
+              "endZoom": 1.18,
+              "startFrac": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "endFrac": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "prompt": {
+              "zh": "宗门账房一片混乱，算盘冒烟，账本满天飞，一个被账本淹没的账房先生剪影，搞笑混乱感，无清晰人脸",
+              "en": "Accounting hall of a cultivation sect in chaos, a smoking abacus, account books flying everywhere, a silhouette of an accountant buried under flying ledgers, comedic chaos, no clear faces"
+            }
+          }
+        ]
+      },
+      "sfx": [],
+      "video": null,
+      "audioEvents": [
+        {
+          "role": "caiji",
+          "text": "灵石少了……",
+          "file": "s02-montage-0.mp3",
+          "startMs": 7900,
+          "durMs": 848
+        },
+        {
+          "role": "caiji",
+          "text": "却有人突然变强？",
+          "file": "s02-montage-1.mp3",
+          "startMs": 9162,
+          "durMs": 1469
+        },
+        {
+          "role": "caiji",
+          "text": "弟子还一个个走了……",
+          "file": "s02-montage-2.mp3",
+          "startMs": 11024,
+          "durMs": 1731
+        },
+        {
+          "role": "caiji",
+          "text": "账上竟查不出这笔亏空！",
+          "file": "s02-montage-3.mp3",
+          "startMs": 12755,
+          "durMs": 1893
+        }
+      ],
+      "floralEvents": []
+    },
+    {
+      "id": "s03-confused",
+      "type": "image",
+      "startMs": 14748,
+      "durMs": 8000,
+      "cameraMode": "zoomIn",
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.3,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.42
+        }
+      },
+      "transition": {
+        "name": "fade",
+        "durMs": 400
+      },
+      "image": {
+        "file": "s03-confused.png",
+        "refs": [
+          "ref-caiji.png",
+          "ref-caiji-tv.png"
+        ],
+        "roles": [
+          "caiji"
+        ],
+        "prompt": {
+          "zh": "菜鸡在大殿中扶额挠头，眉头紧锁，困惑愁容，中近景",
+          "en": "Caiji rubbing his forehead and scratching his head in the grand hall, frowning with confusion and distress, medium close-up"
+        }
+      },
+      "sfx": [
+        "thud"
+      ],
+      "video": {
+        "file": "s03-confused.mp4",
+        "sourceImage": "s03-confused.png",
+        "actionPrompt": {
+          "en": "Cinematic live-action shot, 35mm film look: the sect master in purple robes and golden crown pacing back and forth in the grand hall, scratching his head and frowning with confusion, sighing and muttering to himself. Medium close-up. Steady camera with a gentle dolly-in. Characters must look identical to the reference image, same costume and face. No text, no watermark, no subtitles."
+        }
+      },
+      "audioEvents": [
+        {
+          "role": "caiji",
+          "text": "不对劲……太不对劲了……",
+          "file": "s03-confused-0.mp3",
+          "startMs": 15048,
+          "durMs": 2124
+        },
+        {
+          "role": "caiji",
+          "text": "账本、灵石、弟子……",
+          "file": "s03-confused-1.mp3",
+          "startMs": 17752,
+          "durMs": 2589
+        },
+        {
+          "role": "caiji",
+          "text": "处处透着古怪……",
+          "file": "s03-confused-2.mp3",
+          "startMs": 20451,
+          "durMs": 1630
+        }
+      ],
+      "floralEvents": []
+    },
+    {
+      "id": "s04-hall-ask",
+      "type": "image",
+      "startMs": 22348,
+      "durMs": 5000,
+      "cameraMode": "zoomIn",
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "transition": {
+        "name": "fade",
+        "durMs": 400
+      },
+      "image": {
+        "file": "s04-hall-ask.png",
+        "refs": [
+          "ref-caiji.png",
+          "ref-guoba.png",
+          "ref-caiji-tv.png",
+          "ref-guoba-tv.png"
+        ],
+        "roles": [
+          "caiji",
+          "guoba"
+        ],
+        "prompt": {
+          "zh": "大殿全景：菜鸡坐于高台案后拍案质问，神情激动；锅巴懒散站在堂下，睡眼惺忪，两人一上一下构图",
+          "en": "Wide shot of a grand hall: Caiji sitting behind a desk on the platform, slamming the table angrily; below the platform stands Guoba, looking lazy and sleepy; two figures in a top-bottom composition"
+        }
+      },
+      "sfx": [],
+      "video": {
+        "file": "s04-hall-ask.mp4",
+        "sourceImage": "s04-hall-ask.png",
+        "outMs": 5000,
+        "actionPrompt": {
+          "en": "Cinematic live-action shot, 35mm film look: the sect master in purple robes behind a desk slams the table with both hands and stands up angrily, shouting and pointing forward; the lazy elder in gray robes below the platform startles awake, rubs his eyes, then shrugs sheepishly. Camera holds steady on a medium-wide shot with a very gentle dolly-in. Grand ancient Chinese hall, lantern light. Characters must look identical to the reference image, same costumes and faces. No text, no watermark, no subtitles."
+        }
+      },
+      "audioEvents": [
+        {
+          "role": "caiji",
+          "text": "我们宗门的五大金牌弟子呢！？",
+          "file": "s04-hall-ask-0.mp3",
+          "startMs": 22648,
+          "durMs": 2065
+        }
+      ],
+      "floralEvents": []
+    },
+    {
+      "id": "s05-guoba-reply",
+      "type": "image",
+      "startMs": 26948,
+      "durMs": 3000,
+      "cameraMode": "zoomOut",
+      "camera": {
+        "mode": "zoomOut",
+        "startZoom": 1.15,
+        "endZoom": 1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "transition": {
+        "name": "fade",
+        "durMs": 400
+      },
+      "image": {
+        "file": "s05-guoba-reply.png",
+        "refs": [
+          "ref-guoba.png",
+          "ref-guoba-tv.png"
+        ],
+        "roles": [
+          "guoba"
+        ],
+        "prompt": {
+          "zh": "锅巴近景特写，懒散地耸耸肩，一副事不关己的样子，腰间锅铲可见",
+          "en": "Close-up of Guoba shrugging lazily with an indifferent look, kitchen spatula visible at his waist"
+        }
+      },
+      "sfx": [],
+      "video": {
+        "file": "s05-guoba-reply.mp4",
+        "sourceImage": "s05-guoba-reply.png",
+        "outMs": 3000,
+        "actionPrompt": {
+          "en": "Cinematic live-action shot, 35mm film look: the lazy chubby elder in grey robes shrugging with an indifferent look, yawning and rubbing his sleepy eyes, a kitchen spatula hanging at his waist. Close-up. Steady camera with a very subtle zoom. Characters must look identical to the reference image, same costume and face. No text, no watermark, no subtitles."
+        }
+      },
+      "audioEvents": [
+        {
+          "role": "guoba",
+          "text": "都离职了啊……",
+          "file": "s05-guoba-reply-0.mp3",
+          "startMs": 27248,
+          "durMs": 863
+        }
+      ],
+      "floralEvents": []
+    },
+    {
+      "id": "s06-caiji-why",
+      "type": "image",
+      "startMs": 29548,
+      "durMs": 2000,
+      "cameraMode": "zoomIn",
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.3,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.3
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.28
+        }
+      },
+      "transition": {
+        "name": "fade",
+        "durMs": 400
+      },
+      "image": {
+        "file": "s04-hall-ask.png",
+        "reuse": true
+      },
+      "sfx": [],
+      "video": {
+        "file": "s04-hall-ask.mp4",
+        "sourceImage": "s04-hall-ask.png",
+        "inMs": 2000,
+        "outMs": 4000,
+        "actionPrompt": {
+          "en": "reuse of s04-hall-ask.mp4, slice 2.0s-4.0s"
+        }
+      },
+      "audioEvents": [
+        {
+          "role": "caiji",
+          "text": "为什么？！",
+          "file": "s06-caiji-why-0.mp3",
+          "startMs": 29848,
+          "durMs": 607
+        }
+      ],
+      "floralEvents": []
+    },
+    {
+      "id": "s07-guoba-future",
+      "type": "image",
+      "startMs": 31148,
+      "durMs": 2500,
+      "cameraMode": "panUp",
+      "camera": {
+        "mode": "panUp",
+        "startZoom": 1,
+        "endZoom": 1.12,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.6
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.42
+        }
+      },
+      "transition": {
+        "name": "fade",
+        "durMs": 400
+      },
+      "image": {
+        "file": "s05-guoba-reply.png",
+        "reuse": true
+      },
+      "sfx": [],
+      "video": {
+        "file": "s05-guoba-reply.mp4",
+        "sourceImage": "s05-guoba-reply.png",
+        "inMs": 3500,
+        "outMs": 6000,
+        "actionPrompt": {
+          "en": "reuse of s05-guoba-reply.mp4, slice 3.5s-6.0s"
+        }
+      },
+      "audioEvents": [
+        {
+          "role": "guoba",
+          "text": "他们说『没有前景』……",
+          "file": "s07-guoba-future-0.mp3",
+          "startMs": 31448,
+          "durMs": 1160
+        }
+      ],
+      "floralEvents": []
+    },
+    {
+      "id": "s08-caiji-boast",
+      "type": "image",
+      "startMs": 33248,
+      "durMs": 3500,
+      "cameraMode": "zoomOut",
+      "camera": {
+        "mode": "zoomOut",
+        "startZoom": 1.25,
+        "endZoom": 1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "transition": {
+        "name": "fade",
+        "durMs": 400
+      },
+      "image": {
+        "file": "s04-hall-ask.png",
+        "reuse": true
+      },
+      "sfx": [],
+      "video": {
+        "file": "s04-hall-ask.mp4",
+        "sourceImage": "s04-hall-ask.png",
+        "inMs": 4000,
+        "outMs": 7500,
+        "actionPrompt": {
+          "en": "reuse of s04-hall-ask.mp4, slice 4.0s-7.5s"
+        }
+      },
+      "audioEvents": [
+        {
+          "role": "caiji",
+          "text": "没前景？！我们宗门很牛啊！",
+          "file": "s08-caiji-boast-0.mp3",
+          "startMs": 33548,
+          "durMs": 2535
+        }
+      ],
+      "floralEvents": []
+    },
+    {
+      "id": "s09-open-sunlike",
+      "type": "product",
+      "startMs": 36398,
+      "durMs": 4509,
+      "cameraMode": "zoomIn",
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.25,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "transition": {
+        "name": "fadewhite",
+        "durMs": 350
+      },
+      "product": {
+        "file": "shots/ui-main.png",
+        "source": "raw/界面1.png",
+        "highlight": []
+      },
+      "sfx": [
+        "ding"
+      ],
+      "video": null,
+      "audioEvents": [
+        {
+          "role": "narrator",
+          "text": "直到账房祭出了神器——SUNLIKE 智能财务分析报表",
+          "file": "s09-open-sunlike-0.mp3",
+          "startMs": 36698,
+          "durMs": 3709
+        }
+      ],
+      "floralEvents": [
+        {
+          "text": "SUNLIKE 智能财务分析报表",
+          "style": "title",
+          "pos": "top-center",
+          "startMs": 36898,
+          "durMs": 2600
+        }
+      ]
+    },
+    {
+      "id": "s10-deduction",
+      "type": "product",
+      "startMs": 40507,
+      "durMs": 4684,
+      "cameraMode": "zoomIn",
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.3,
+        "startFrac": {
+          "x": 0.6,
+          "y": 0.6
+        },
+        "endFrac": {
+          "x": 0.45,
+          "y": 0.5
+        }
+      },
+      "transition": {
+        "name": "fade",
+        "durMs": 400
+      },
+      "product": {
+        "file": "shots/ui-query.png",
+        "source": "raw/界面2.png",
+        "highlight": []
+      },
+      "sfx": [],
+      "video": null,
+      "audioEvents": [
+        {
+          "role": "narrator",
+          "text": "总收入在涨，五个人的个人成长曲线却在跌……",
+          "file": "s10-deduction-0.mp3",
+          "startMs": 40807,
+          "durMs": 3884
+        }
+      ],
+      "floralEvents": [
+        {
+          "text": "宗门总收入 ↑",
+          "style": "note",
+          "pos": "top-left",
+          "startMs": 41107,
+          "durMs": 2400
+        },
+        {
+          "text": "金牌弟子成长 ↓",
+          "style": "impact",
+          "pos": "bottom-right",
+          "startMs": 42307,
+          "durMs": 2400
+        }
+      ]
+    },
+    {
+      "id": "s11-truth",
+      "type": "product",
+      "startMs": 44791,
+      "durMs": 4500,
+      "cameraMode": "zoomIn",
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.2,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "endFrac": {
+          "x": 0.45,
+          "y": 0.42
+        }
+      },
+      "transition": {
+        "name": "fade",
+        "durMs": 400
+      },
+      "product": {
+        "file": "shots/ui-ai.png",
+        "source": "raw/界面4.png",
+        "highlight": []
+      },
+      "sfx": [],
+      "video": null,
+      "audioEvents": [
+        {
+          "role": "narrator",
+          "text": "他们被分散到杂务部门，个人修为停滞了……",
+          "file": "s11-truth-0.mp3",
+          "startMs": 45091,
+          "durMs": 3185
+        }
+      ],
+      "floralEvents": [
+        {
+          "text": "被分散到杂务部门",
+          "style": "note",
+          "pos": "top-left",
+          "startMs": 45191,
+          "durMs": 2600
+        },
+        {
+          "text": "个人修为停滞",
+          "style": "impact",
+          "pos": "bottom-right",
+          "startMs": 46591,
+          "durMs": 2600
+        }
+      ]
+    },
+    {
+      "id": "s12-facepalm",
+      "type": "image",
+      "startMs": 48891,
+      "durMs": 2200,
+      "cameraMode": "static",
+      "camera": {
+        "mode": "static",
+        "startZoom": 1,
+        "endZoom": 1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "transition": {
+        "name": "fade",
+        "durMs": 400
+      },
+      "image": {
+        "file": "s12-facepalm.png",
+        "refs": [
+          "ref-caiji.png",
+          "ref-guoba.png",
+          "ref-caiji-tv.png",
+          "ref-guoba-tv.png"
+        ],
+        "roles": [
+          "caiji",
+          "guoba"
+        ],
+        "prompt": {
+          "zh": "喜剧表情包定格：菜鸡瞪大眼睛，嘴巴大张，石化僵硬；身后锅巴满头大汗僵笑，两人同框，夸张喜剧表情",
+          "en": "Comedy reaction shot: Caiji frozen in shock, eyes bulging wide, mouth agape, petrified like a statue; behind him Guoba sweating with a stiff embarrassed smile, both in frame, exaggerated comedic expression"
+        }
+      },
+      "sfx": [],
+      "video": null,
+      "audioEvents": [],
+      "floralEvents": [
+        {
+          "text": "原来如此！！",
+          "style": "impact",
+          "pos": "bottom-center",
+          "startMs": 49091,
+          "durMs": 1800
+        }
+      ]
+    },
+    {
+      "id": "s13-regret",
+      "type": "image",
+      "startMs": 50691,
+      "durMs": 5500,
+      "cameraMode": "zoomOut",
+      "camera": {
+        "mode": "zoomOut",
+        "startZoom": 1.1,
+        "endZoom": 1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.42
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "transition": {
+        "name": "fade",
+        "durMs": 400
+      },
+      "image": {
+        "file": "s13-regret.png",
+        "refs": [
+          "ref-caiji.png",
+          "ref-caiji-tv.png"
+        ],
+        "roles": [
+          "caiji"
+        ],
+        "prompt": {
+          "zh": "菜鸡低头握拳，神情懊悔，大殿背景压暗，中景，情绪收敛",
+          "en": "Caiji the sect master lowering his head and clenching his fists, remorseful and regretful expression, grand hall background dimmed, medium shot, restrained emotion"
+        }
+      },
+      "sfx": [],
+      "video": {
+        "file": "s13-regret.mp4",
+        "sourceImage": "s13-regret.png",
+        "outMs": 5500,
+        "actionPrompt": {
+          "en": "Cinematic live-action shot, 35mm film look: the sect master in purple robes lowering his head and clenching his fists in remorse, slowly looking up with a pained expression, the grand hall dimmed behind him. Medium shot, restrained emotion. Steady camera with a very slow zoom-out. Characters must look identical to the reference image, same costume and face. No text, no watermark, no subtitles."
+        }
+      },
+      "audioEvents": [
+        {
+          "role": "caiji",
+          "text": "我竟然没注意到……他们被『浪费』了！",
+          "file": "s13-regret-0.mp3",
+          "startMs": 50991,
+          "durMs": 2971
+        }
+      ],
+      "floralEvents": []
+    },
+    {
+      "id": "s14-endcard",
+      "type": "textcard",
+      "startMs": 55791,
+      "durMs": 4200,
+      "cameraMode": "static",
+      "camera": {
+        "mode": "static",
+        "startZoom": 1,
+        "endZoom": 1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "transition": {
+        "name": "fade",
+        "durMs": 400
+      },
+      "image": {
+        "file": ""
+      },
+      "background": "0x0b0b1a",
+      "sfx": [],
+      "video": null,
+      "audioEvents": [
+        {
+          "role": "narrator",
+          "text": "这就是没有数据分析的代价",
+          "file": "s14-endcard-0.mp3",
+          "startMs": 56091,
+          "durMs": 2001
+        }
+      ],
+      "floralEvents": [
+        {
+          "text": "SUNLIKE 智能财务分析报表",
+          "style": "slogan",
+          "pos": "top",
+          "startMs": 56091,
+          "durMs": 3600
+        },
+        {
+          "text": "发现你看不见的真相",
+          "style": "slogan",
+          "pos": "bottom",
+          "startMs": 57191,
+          "durMs": 2800
+        }
+      ]
+    }
+  ],
+  "totalMs": 59991
+}

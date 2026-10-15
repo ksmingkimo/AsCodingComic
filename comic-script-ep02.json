@@ -1,0 +1,1048 @@
+{
+  "meta": {
+    "version": "1.0",
+    "episode": 2,
+    "title": "第二集：为什么大长老说没钱，但银行卡满的",
+    "product": "SUNLIKE 智能财务分析报表",
+    "slogan": "SUNLIKE 智能财务分析报表 · 发现你看不见的真相",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "imageDir": "assets/images/ep02/",
+    "refDir": "assets/refs/",
+    "audioDir": "assets/audio/ep02/",
+    "productDir": "assets/product/shots/",
+    "sfxDir": "assets/sfx/",
+    "videoDir": "assets/video/ep02/",
+    "veo": {
+      "model": "veo-3.1-fast-generate-preview",
+      "resolution": "1080p",
+      "durationSeconds": 8,
+      "aspectRatio": "16:9",
+      "negativePrompt": "cartoon, anime, text, watermark, subtitles, distorted faces, extra limbs, morphing, flickering",
+      "ratePerSecond": 0.12
+    },
+    "lang": "zh-cn",
+    "styleLock": {
+      "zh": "真人影视剧照风格，写实仙侠剧质感，自然皮肤纹理与布料细节，电影级体积光，浅景深，胶片质感",
+      "en": "Photorealistic cinematic live-action film still, realistic Chinese xianxia TV drama aesthetic, natural skin texture and fabric detail, volumetric lighting, shallow depth of field, 35mm film look"
+    },
+    "negative": {
+      "zh": "低质量、模糊、多余手指、肢体畸形、画面文字、乱码文字、水印、logo、多张脸、动漫、卡通、二次元、赛璐璐平涂、塑料皮肤、CG渲染感",
+      "en": "low quality, blurry, extra fingers, deformed limbs, text, garbled text, watermark, logo, multiple faces, anime, cartoon, manga, 2D illustration, cel shading, chibi, plastic skin, doll-like, CGI render, video game look"
+    },
+    "defaults": {
+      "leadInMs": 250,
+      "tailMs": 350,
+      "minHoldMs": 1200,
+      "transition": {
+        "name": "fade",
+        "durMs": 400
+      }
+    },
+    "whitelist": [],
+    "budget": { "sceneImages": 10, "refs": 4 },
+    "bgm": {
+      "phases": { "body": "s04-caiji-doubt", "product": "s09-open-sunlike" },
+      "tracks": ["Ossuary 6 - Air.mp3", "Finding the Balance.mp3", "Volatile Reaction.mp3"],
+      "xfade": 2
+    },
+    "productShots": [
+      { "source": "demos/project-a.html", "out": "ui-project-a.png", "prep": "headless" },
+      { "source": "demos/project-b.html", "out": "ui-project-b.png", "prep": "headless" },
+      { "source": "demos/project-c.html", "out": "ui-project-c.png", "prep": "headless" }
+    ],
+    "docsNotes": [
+      "**s09** 复用 ep01 的 `shots/ui-main.png` 主界面截图作为「神器」登场画面（品牌一致性，不重新截图）。",
+      "**s10–s12** 三张真相截图为流水线自产 demo 页（`assets/product/demos/project-a/b/c.html`）的 Chrome headless 截图，页面数据即本集真相；截图链路失败则退回 ep01 手法（raw 界面图 + 花字旁白）。",
+      "**s02** 蒙太奇 delayMs 已按 TTS 实测校准（声音领先切点 311/671/571ms——l3/l4 台词长于 1/4 格子，领先略大属蒙太奇声音领画惯例）；重出配音后需重跑 build-timeline 复核。",
+      "**节奏**（2026-08-24 用户拍板）：本集台词密度高于 ep01（20 句 vs 16 句），实测成片约 65s——交付规格上限由 60s 放宽至 75s（V4 闸门同区间），本集配音在情绪允许范围内整体提速、leadIn/tail 收紧至 250/350ms。"
+    ]
+  },
+  "characters": {
+    "caiji": {
+      "name": "菜鸡",
+      "title": "宗主",
+      "voice": "zh-CN-YunjianNeural",
+      "rate": "-4%",
+      "anchor": {
+        "zh": "菜鸡（宗主）：60岁男，国字脸、三角眼、浓眉、白发白须，紫色宗主袍绣金色云纹，头戴高冠，手持白色拂尘。不得更换发型胡须、不得加伤疤、不得变年轻、不得更换袍色",
+        "en": "Caiji the sect master: a 60-year-old man with a square face, fierce triangular eyes, thick eyebrows, white hair and white beard, wearing a purple sect master robe with golden cloud patterns, a tall jade crown, holding a white horsetail whisk. Do not change his hairstyle, beard, crown, or robe color"
+      }
+    },
+    "luobo": {
+      "name": "萝卜",
+      "title": "大长老",
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": "-4%",
+      "pitch": "-14Hz",
+      "anchor": {
+        "zh": "萝卜（大长老）：外貌如18岁少女，鹅蛋脸无皱纹、杏眼，青色锦袍，珍珠发簪，宝珠手串。不得画老、不得朴素",
+        "en": "Luobo the grand elder: looks like an 18-year-old young woman with a flawless oval face, almond eyes, wearing a cyan brocade robe, a pearl hairpin, and a precious-bead bracelet. Do not age her or make her look plain"
+      }
+    },
+    "narrator": {
+      "name": "旁白",
+      "title": "",
+      "voice": "zh-CN-YunyangNeural",
+      "rate": "+4%"
+    }
+  },
+  "refs": [
+    {
+      "file": "ref-luobo.png",
+      "char": "luobo",
+      "prompt": {
+        "zh": "萝卜全身立绘：50岁女长老但保养得像18岁，鹅蛋脸无皱纹，杏眼，青色锦袍，珍珠发簪，手腕一串宝珠，气质爽朗精致，站姿，影棚灯光纯色浅色背景，无文字",
+        "en": "Full-body character reference portrait of Luobo, a 50-year-old female cultivator elder who looks like a beautiful 18-year-old, oval face without wrinkles, almond eyes, wearing a cyan brocade robe and a pearl hairpin, a string of treasure beads on her wrist, cheerful and elegant, standing pose, studio lighting, plain light background, no text"
+      }
+    },
+    {
+      "file": "ref-luobo-tv.png",
+      "char": "luobo",
+      "prompt": {
+        "zh": "萝卜三视图：同一人正/侧/背三视图并排，全身，50岁女长老保养得像18岁，鹅蛋脸无皱纹，杏眼，青色锦袍，珍珠发簪，手腕一串宝珠，气质爽朗精致，三视图造型完全一致，站姿，影棚灯光纯色浅色背景，无文字",
+        "en": "Turn-around character sheet of Luobo: front view, side view and back view of the same person side by side, full body, a 50-year-old female cultivator elder who looks like a beautiful 18-year-old, oval face without wrinkles, almond eyes, wearing a cyan brocade robe and a pearl hairpin, a string of treasure beads on her wrist, cheerful and elegant, identical appearance across all three views, standing pose, studio lighting, plain light background, no text"
+      }
+    },
+    {
+      "file": "ref-caiji.png",
+      "char": "caiji",
+      "prompt": {
+        "zh": "菜鸡全身立绘：60岁男宗主，白发白须，三角眼浓眉，国字脸，面相凶悍但眼神透出糊涂，紫色宗主袍绣金色云纹，头戴高冠，手持拂尘，站姿，影棚灯光纯色浅色背景，无文字",
+        "en": "Full-body character reference portrait of Caiji, a 60-year-old male cultivator sect master, white hair and white beard, fierce triangular eyes with thick eyebrows, square face, fierce-looking but slightly confused gaze, wearing a purple sect master robe with golden cloud patterns and a tall crown, holding a horsetail whisk, standing pose, studio lighting, plain light background, no text"
+      }
+    },
+    {
+      "file": "ref-caiji-tv.png",
+      "char": "caiji",
+      "prompt": {
+        "zh": "菜鸡三视图：同一人正/侧/背三视图并排，全身，60岁男宗主，白发白须，三角眼浓眉，国字脸，紫色宗主袍绣金色云纹，头戴高冠，手持拂尘，三视图造型完全一致，站姿，影棚灯光纯色浅色背景，无文字",
+        "en": "Turn-around character sheet of Caiji: front view, side view and back view of the same person side by side, full body, a 60-year-old male cultivator sect master, white hair and white beard, fierce triangular eyes with thick eyebrows, square face, wearing a purple sect master robe with golden cloud patterns and a tall crown, holding a horsetail whisk, identical appearance across all three views, standing pose, studio lighting, plain light background, no text"
+      }
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s01-payday",
+      "title": "发月例日账房空空",
+      "type": "image",
+      "image": {
+        "file": "s01-payday.png",
+        "prompt": {
+          "zh": "宗门账房窗口紧闭，窗口外弟子们排起长队，有人拍窗、有人举手叫嚷，怨声一片，账房先生只露出一个躲在窗后的剪影，黄昏光线，喜剧混乱氛围，无清晰人脸",
+          "en": "The payday window of a sect accounting hall shut tight, a long queue of disciples in sect robes crowding outside, some knocking on the window, some raising their hands and shouting, murmurs of discontent, the accountant only a cowering silhouette behind the window, dusk light, comedic chaos, no clear faces"
+        }
+      },
+      "video": {
+        "file": "s01-payday.mp4",
+        "sourceImage": "s01-payday.png",
+        "outMs": 5000,
+        "actionPrompt": {
+          "en": "Cinematic live-action shot, 35mm film look: a long queue of sect disciples in robes crowding outside a closed payday window of an accounting hall, knocking on the window, raising hands, pushing and jostling with discontent, the accountant cowering behind the window as a dark silhouette. Comedic chaos with lively natural motion. Steady camera with a slow push-in. No text, no watermark, no subtitles."
+        }
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.12,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "audio": [
+        {
+          "role": "narrator",
+          "text": "又到了发月例的日子——账房却支不出一块灵石。",
+          "isNarration": true,
+          "rate": "-10%",
+          "pitch": "-4Hz"
+        }
+      ],
+      "florals": [
+        {
+          "text": "发月例的日子",
+          "tMs": 300,
+          "durMs": 2500,
+          "pos": "top-center",
+          "style": "title"
+        }
+      ],
+      "sfx": [
+        "wind"
+      ],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 4000
+      },
+      "verify": {
+        "brightness": "dark"
+      }
+    },
+    {
+      "id": "s02-montage",
+      "title": "萝卜因果四连快切",
+      "type": "montage",
+      "image": {
+        "file": "s02-montage",
+        "altImages": [
+          {
+            "file": "s02a-empty-vault.png",
+            "camera": {
+              "mode": "zoomIn",
+              "startZoom": 1,
+              "endZoom": 1.18,
+              "startFrac": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "endFrac": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "prompt": {
+              "zh": "宗门金库内景，货架空空如也，地上散落几颗灵石，一只干瘪的钱袋瘫在角落，冷白色月光从高窗照入，无人物，压抑荒诞的喜剧氛围",
+              "en": "Inside the treasure vault of a cultivation sect, shelves completely empty, a few spirit stones scattered on the floor, a shriveled money pouch lying in the corner, cold pale moonlight from a high window, no people, oppressive yet absurd comedic mood"
+            }
+          },
+          {
+            "file": "s02b-ledger-total.png",
+            "camera": {
+              "mode": "zoomIn",
+              "startZoom": 1,
+              "endZoom": 1.18,
+              "startFrac": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "endFrac": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "prompt": {
+              "zh": "一本摊开的厚账本特写，一支朱笔圈住账页最下方的一个总数，密密麻麻的账目墨字模糊虚化不可辨认，油灯暖光，无人物，只有账本与笔",
+              "en": "Close-up of a thick open account book, a red brush circling the grand total at the bottom of the page, dense rows of ledger entries blurred and illegible, warm oil-lamp light, no people, only the book and the brush"
+            }
+          },
+          {
+            "file": "s02c-empty-bowls.png",
+            "camera": {
+              "mode": "zoomIn",
+              "startZoom": 1,
+              "endZoom": 1.18,
+              "startFrac": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "endFrac": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "prompt": {
+              "zh": "账房窗口前，弟子们举着空空的碗焦急张望，互相推挤，神情不满，无清晰人脸，闹哄哄的喜剧氛围",
+              "en": "Outside the accounting-hall window, disciples holding up empty bowls and looking around anxiously, pushing each other, dissatisfied expressions, no clear faces, noisy comedic mood"
+            }
+          },
+          {
+            "file": "s02d-torn-ledger.png",
+            "camera": {
+              "mode": "zoomIn",
+              "startZoom": 1,
+              "endZoom": 1.18,
+              "startFrac": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "endFrac": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "prompt": {
+              "zh": "宗门账房一片狼藉，账本翻烂散落一地，账房先生蹲在地上双手抓头发，背影剪影，无清晰人脸，崩溃荒诞的喜剧氛围",
+              "en": "The sect accounting hall in shambles, torn account books scattered everywhere, the accountant squatting on the floor clutching his head in despair, seen from behind as a silhouette, no clear faces, breakdown comedic mood"
+            }
+          }
+        ]
+      },
+      "camera": {
+        "mode": "static",
+        "startZoom": 1,
+        "endZoom": 1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "audio": [
+        {
+          "role": "luobo",
+          "text": "金库……空了……",
+          "isNarration": false,
+          "rate": "-8%",
+          "pitch": "-12Hz",
+          "delayMs": 0
+        },
+        {
+          "role": "luobo",
+          "text": "账上——却写着五百万？！",
+          "isNarration": false,
+          "rate": "+14%",
+          "pitch": "+0Hz",
+          "delayMs": 300
+        },
+        {
+          "role": "luobo",
+          "text": "弟子们……一块灵石也领不到……",
+          "isNarration": false,
+          "rate": "-6%",
+          "pitch": "-16Hz",
+          "delayMs": 300
+        },
+        {
+          "role": "luobo",
+          "text": "这钱——账本上根本看不出去了哪！！",
+          "isNarration": false,
+          "rate": "+22%",
+          "pitch": "+2Hz",
+          "delayMs": 0
+        }
+      ],
+      "florals": [],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 5500
+      },
+      "verify": {
+        "brightness": "mixed"
+      }
+    },
+    {
+      "id": "s03-dashuan-report",
+      "title": "萝卜冲进大殿报信",
+      "type": "image",
+      "image": {
+        "file": "s03-dashuan-report.png",
+        "refs": [
+          "ref-luobo.png",
+          "ref-luobo-tv.png"
+        ],
+        "roles": [
+          "luobo"
+        ],
+        "prompt": {
+          "zh": "萝卜提着裙摆从殿门外急匆匆奔入大殿，神色慌张，气喘吁吁，一手朝高台方向比划，中景，大殿灯火通明",
+          "en": "Luobo the grand elder rushing in through the hall entrance, lifting her robe hem, looking flustered and breathless, gesturing urgently toward the dais with one hand, medium shot, the grand hall brightly lit by lanterns"
+        }
+      },
+      "video": {
+        "file": "s03-dashuan-report.mp4",
+        "sourceImage": "s03-dashuan-report.png",
+        "outMs": 6500,
+        "actionPrompt": {
+          "en": "Cinematic live-action shot, 35mm film look: the grand elder in cyan brocade robe rushing breathlessly into a grand ancient hall through the entrance, lifting her robe hem, hair slightly disheveled, waving one arm urgently toward the dais while panting. Medium shot. Steady camera with a gentle dolly-in. Character must look identical to the reference image, same costume and face. No text, no watermark, no subtitles."
+        }
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.3,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.4
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.35
+        }
+      },
+      "audio": [
+        {
+          "role": "luobo",
+          "text": "宗、宗主！！出——大事了！！",
+          "isNarration": false,
+          "rate": "+35%",
+          "pitch": "+4Hz",
+          "delayMs": 0
+        },
+        {
+          "role": "luobo",
+          "text": "账房空了！！这个月的月例……一块灵石也支不出来啊！",
+          "isNarration": false,
+          "rate": "+24%",
+          "pitch": "+2Hz",
+          "delayMs": 100
+        },
+        {
+          "role": "luobo",
+          "text": "弟子们全堵在账房外头……眼看就要闹起来了！",
+          "isNarration": false,
+          "rate": "-6%",
+          "pitch": "-12Hz",
+          "delayMs": 100
+        }
+      ],
+      "florals": [],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 4000
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s04-caiji-doubt",
+      "title": "宗主拍案不信",
+      "type": "image",
+      "image": {
+        "file": "s04-caiji-doubt.png",
+        "refs": [
+          "ref-caiji.png",
+          "ref-caiji-tv.png"
+        ],
+        "roles": [
+          "caiji"
+        ],
+        "prompt": {
+          "zh": "菜鸡坐在高台案后拍案而起，眼睛瞪得滚圆，满脸难以置信，一只手指着摊在案上的账本，中近景",
+          "en": "Caiji the sect master sitting behind the desk on the platform slamming the table and rising to his feet, eyes wide open, face full of disbelief, pointing at the account book spread on the desk with one hand, medium close-up"
+        }
+      },
+      "video": {
+        "file": "s04-caiji-doubt.mp4",
+        "sourceImage": "s04-caiji-doubt.png",
+        "outMs": 5000,
+        "actionPrompt": {
+          "en": "Cinematic live-action shot, 35mm film look: the sect master in purple robes and golden crown slamming the table and standing up in disbelief, eyes wide, jabbing a finger at the account book on his desk while shouting. Medium close-up, grand ancient hall, lantern light. Steady camera with a very gentle dolly-in. Character must look identical to the reference image, same costume and face. No text, no watermark, no subtitles."
+        }
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "audio": [
+        {
+          "role": "caiji",
+          "text": "不可能！我上个月刚查过账——账上明明躺着五百万灵石！",
+          "isNarration": false,
+          "rate": "+16%",
+          "pitch": "+10Hz"
+        }
+      ],
+      "florals": [],
+      "sfx": [
+        "thud"
+      ],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 3000
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s05-luobo-ledger",
+      "title": "萝卜摊手解释",
+      "type": "image",
+      "image": {
+        "file": "s05-luobo-ledger.png",
+        "refs": [
+          "ref-luobo.png",
+          "ref-luobo-tv.png"
+        ],
+        "roles": [
+          "luobo"
+        ],
+        "prompt": {
+          "zh": "萝卜站在堂下摊开双手，一脸无奈，眼神诚恳地向上解释，眉头微蹙，中近景",
+          "en": "Luobo the grand elder standing below the platform with both hands spread open, looking helpless but sincere, explaining upward with a slight frown, medium close-up"
+        }
+      },
+      "video": {
+        "file": "s05-luobo-ledger.mp4",
+        "sourceImage": "s05-luobo-ledger.png",
+        "outMs": 5000,
+        "actionPrompt": {
+          "en": "Cinematic live-action shot, 35mm film look: the grand elder in cyan brocade robe spreading her hands open with a helpless look, explaining patiently with an honest gaze, then letting out a sigh. Medium close-up, grand ancient hall. Steady camera with a very slow zoom-out. Character must look identical to the reference image, same costume and face. No text, no watermark, no subtitles."
+        }
+      },
+      "camera": {
+        "mode": "zoomOut",
+        "startZoom": 1.15,
+        "endZoom": 1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "audio": [
+        {
+          "role": "luobo",
+          "text": "账本上的数没错……可账本只记总数，不记死活。",
+          "isNarration": false,
+          "rate": "-6%",
+          "pitch": "-20Hz"
+        }
+      ],
+      "florals": [],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 3000
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s06-caiji-shock",
+      "title": "宗主被死活惊到",
+      "type": "image",
+      "image": {
+        "file": "s04-caiji-doubt.png",
+        "reuse": true
+      },
+      "video": {
+        "file": "s04-caiji-doubt.mp4",
+        "sourceImage": "s04-caiji-doubt.png",
+        "inMs": 2000,
+        "outMs": 4500,
+        "actionPrompt": {
+          "en": "reuse of s04-caiji-doubt.mp4, slice 2.0s-4.5s"
+        }
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.3,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.35
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.32
+        }
+      },
+      "audio": [
+        {
+          "role": "caiji",
+          "text": "死活？！灵石还能有死活？！",
+          "isNarration": false,
+          "rate": "+22%",
+          "pitch": "+15Hz"
+        }
+      ],
+      "florals": [],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 2000
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s07-luobo-projects",
+      "title": "三个永久项目",
+      "type": "image",
+      "image": {
+        "file": "s05-luobo-ledger.png",
+        "reuse": true
+      },
+      "video": {
+        "file": "s05-luobo-ledger.mp4",
+        "sourceImage": "s05-luobo-ledger.png",
+        "inMs": 1500,
+        "outMs": 5000,
+        "actionPrompt": {
+          "en": "reuse of s05-luobo-ledger.mp4, slice 1.5s-5.0s"
+        }
+      },
+      "camera": {
+        "mode": "panUp",
+        "startZoom": 1,
+        "endZoom": 1.12,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.6
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.42
+        }
+      },
+      "audio": [
+        {
+          "role": "luobo",
+          "text": "宗门这两年上马的三个『永久项目』——个个都是吃灵石的黑洞。",
+          "isNarration": false,
+          "rate": "-4%",
+          "pitch": "-14Hz"
+        }
+      ],
+      "florals": [],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 2500
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s08-luobo-reveal",
+      "title": "九成进了黑洞",
+      "type": "image",
+      "image": {
+        "file": "s05-luobo-ledger.png",
+        "reuse": true
+      },
+      "video": {
+        "file": "s05-luobo-ledger.mp4",
+        "sourceImage": "s05-luobo-ledger.png",
+        "inMs": 2000,
+        "outMs": 8000,
+        "actionPrompt": {
+          "en": "reuse of s05-luobo-ledger.mp4, slice 4.5s-8.0s"
+        }
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.25,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "audio": [
+        {
+          "role": "luobo",
+          "text": "钱没丢——九成被吸进了洞，账本上照样写着五百万。",
+          "isNarration": false,
+          "rate": "+2%",
+          "pitch": "-10Hz"
+        }
+      ],
+      "florals": [],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 2500
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s09-open-sunlike",
+      "title": "转折：请出SUNLIKE",
+      "type": "product",
+      "product": {
+        "file": "shots/ui-main.png",
+        "source": "raw/界面1.png",
+        "highlight": []
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.25,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "audio": [
+        {
+          "role": "narrator",
+          "text": "直到大长老把神器请了出来——",
+          "isNarration": true,
+          "rate": "+8%",
+          "pitch": "+4Hz"
+        }
+      ],
+      "florals": [
+        {
+          "text": "SUNLIKE 智能财务分析报表",
+          "tMs": 500,
+          "durMs": 2600,
+          "pos": "top-center",
+          "style": "title"
+        }
+      ],
+      "sfx": [
+        "ding"
+      ],
+      "transition": {
+        "name": "fadewhite",
+        "durMs": 350
+      },
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 3800
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s10-p1",
+      "title": "真相一：项目启动三年还是初期",
+      "type": "product",
+      "product": {
+        "file": "shots/ui-project-a.png",
+        "source": "demos/project-a.html",
+        "highlight": []
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.3,
+        "startFrac": {
+          "x": 0.6,
+          "y": 0.6
+        },
+        "endFrac": {
+          "x": 0.45,
+          "y": 0.5
+        }
+      },
+      "audio": [
+        {
+          "role": "narrator",
+          "text": "第一个『永久项目』：启动三年，还在『初期阶段』。",
+          "isNarration": true,
+          "rate": "+4%"
+        }
+      ],
+      "florals": [
+        {
+          "text": "启动 3 年 · 初期阶段",
+          "tMs": 600,
+          "durMs": 2400,
+          "pos": "top-left",
+          "style": "note"
+        }
+      ],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 3500
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s11-p2",
+      "title": "真相二：耗资百万产出为零",
+      "type": "product",
+      "product": {
+        "file": "shots/ui-project-b.png",
+        "source": "demos/project-b.html",
+        "highlight": []
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.3,
+        "startFrac": {
+          "x": 0.4,
+          "y": 0.5
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "audio": [
+        {
+          "role": "narrator",
+          "text": "第二个：耗资百万，产出——零。",
+          "isNarration": true,
+          "pitch": "-2Hz"
+        }
+      ],
+      "florals": [
+        {
+          "text": "耗资 100 万 · 产出 0",
+          "tMs": 600,
+          "durMs": 2400,
+          "pos": "bottom-right",
+          "style": "impact"
+        }
+      ],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 3100
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s12-p3",
+      "title": "真相三：负责人离职灵石照烧",
+      "type": "product",
+      "product": {
+        "file": "shots/ui-project-c.png",
+        "source": "demos/project-c.html",
+        "highlight": []
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.3,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.4
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "audio": [
+        {
+          "role": "narrator",
+          "text": "第三个：负责人早已离职，灵石却还在烧。",
+          "isNarration": true,
+          "rate": "+6%"
+        }
+      ],
+      "florals": [
+        {
+          "text": "负责人已离职 · 灵石照烧",
+          "tMs": 600,
+          "durMs": 2400,
+          "pos": "top-left",
+          "style": "note"
+        }
+      ],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 3500
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s13-stone",
+      "title": "表情包：九成都是黑洞",
+      "type": "image",
+      "image": {
+        "file": "s13-stone.png",
+        "refs": [
+          "ref-caiji.png",
+          "ref-luobo.png",
+          "ref-caiji-tv.png",
+          "ref-luobo-tv.png"
+        ],
+        "roles": [
+          "caiji",
+          "luobo"
+        ],
+        "prompt": {
+          "zh": "喜剧表情包定格：菜鸡瞪大眼睛嘴巴大张，石化僵硬；旁边萝卜扶额苦笑，满头黑线，两人同框，夸张喜剧表情",
+          "en": "Comedy reaction shot: Caiji frozen in shock, eyes bulging wide, mouth agape, petrified like a statue; beside him Luobo face-palming with a bitter smile and a sweat drop, both in frame, exaggerated comedic expressions"
+        }
+      },
+      "camera": {
+        "mode": "static",
+        "startZoom": 1,
+        "endZoom": 1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "audio": [],
+      "florals": [
+        {
+          "text": "九成？！都是黑洞？！",
+          "tMs": 200,
+          "durMs": 1800,
+          "pos": "bottom-center",
+          "style": "impact"
+        }
+      ],
+      "sfx": [],
+      "duration": {
+        "strategy": "fixed",
+        "holdMs": 1800
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s14-order",
+      "title": "宗主拍案下令",
+      "type": "image",
+      "image": {
+        "file": "s14-order.png",
+        "refs": [
+          "ref-caiji.png",
+          "ref-caiji-tv.png"
+        ],
+        "roles": [
+          "caiji"
+        ],
+        "prompt": {
+          "zh": "菜鸡立于高台之上拍案下令，神情威严，一手指向前方，大殿气势庄重，中景",
+          "en": "Caiji the sect master standing on the platform slamming the desk and giving a decisive order, stern and dignified, pointing forward with one hand, the grand hall imposing and solemn, medium shot"
+        }
+      },
+      "video": {
+        "file": "s14-order.mp4",
+        "sourceImage": "s14-order.png",
+        "outMs": 6000,
+        "actionPrompt": {
+          "en": "Cinematic live-action shot, 35mm film look: the sect master in purple robes slamming the desk and giving a decisive order, looking stern and dignified, pointing forward emphatically, then raising his fist. Medium shot, grand ancient hall. Steady camera with a slow zoom-out. Character must look identical to the reference image, same costume and face. No text, no watermark, no subtitles."
+        }
+      },
+      "camera": {
+        "mode": "zoomOut",
+        "startZoom": 1.1,
+        "endZoom": 1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.42
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "audio": [
+        {
+          "role": "caiji",
+          "text": "查！给我把每个项目的水都拧出来！",
+          "isNarration": false,
+          "rate": "+20%",
+          "pitch": "+12Hz",
+          "delayMs": 0
+        },
+        {
+          "role": "caiji",
+          "text": "从今往后，每一块灵石的去向，都要看得见！",
+          "isNarration": false,
+          "rate": "+16%",
+          "pitch": "+4Hz",
+          "delayMs": 100
+        }
+      ],
+      "florals": [],
+      "sfx": [
+        "thud"
+      ],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 4000
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s15-endcard",
+      "title": "结尾字幕卡",
+      "type": "textcard",
+      "image": {
+        "file": ""
+      },
+      "background": "0x0b0b1a",
+      "camera": {
+        "mode": "static",
+        "startZoom": 1,
+        "endZoom": 1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "audio": [
+        {
+          "role": "narrator",
+          "text": "这就是只看总账的代价",
+          "isNarration": true
+        }
+      ],
+      "florals": [
+        {
+          "text": "SUNLIKE 智能财务分析报表",
+          "tMs": 300,
+          "durMs": 3600,
+          "pos": "top",
+          "style": "slogan"
+        },
+        {
+          "text": "发现你看不见的真相",
+          "tMs": 1400,
+          "durMs": 2800,
+          "pos": "bottom",
+          "style": "slogan"
+        }
+      ],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 3800
+      },
+      "verify": {
+        "brightness": "dark"
+      }
+    }
+  ]
+}

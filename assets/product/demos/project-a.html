@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>项目台账 — 永久项目 · 甲</title>
+<link rel="stylesheet" href="../raw/css/dashboard.css">
+<link rel="stylesheet" href="demo-common.css">
+</head>
+<body>
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-brand">
+    <h2>Sunlike ERP</h2>
+    <div class="brand-sub">报表查询系统</div>
+  </div>
+  <div class="sidebar-user">
+    <div class="avatar" id="userAvatar">萝</div>
+    <span id="userName">萝卜（大长老）</span>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="nav-item">报表查询</div>
+    <div class="nav-item active">项目台账</div>
+    <div class="nav-item">预算分析</div>
+    <div class="nav-item">资源调度</div>
+  </nav>
+</aside>
+<main class="main-content">
+  <header class="content-header">
+    <h3>项目台账 — 永久项目 · 甲</h3>
+    <div class="header-actions">
+      <button class="btn btn-secondary btn-sm">刷新</button>
+    </div>
+  </header>
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-label">项目状态</div>
+      <div class="kpi-value"><span class="badge badge-warning" style="font-size:16px">初期阶段</span></div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">已启动</div>
+      <div class="kpi-value">3 年</div>
+      <div class="kpi-label">（1,095 天）</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">阶段进度</div>
+      <div class="kpi-value">第 1 / 5 阶段</div>
+      <div class="progress"><div class="fill" style="width:5%"></div></div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">本月支出</div>
+      <div class="kpi-value warn">76,000 灵石</div>
+    </div>
+  </div>
+  <div class="chart-card">
+    <div class="chart-title">阶段进度（计划 5 阶段）</div>
+    <div class="bar-row"><span class="bar-label">阶段 1 · 调研</span><div class="bar-track"><div class="bar-fill green" style="width:100%"></div></div></div>
+    <div class="bar-row"><span class="bar-label">阶段 2 · 论证</span><div class="bar-track"><div class="bar-fill green" style="width:100%"></div></div></div>
+    <div class="bar-row"><span class="bar-label">阶段 3 · 实施</span><div class="bar-track"><div class="bar-fill amber" style="width:8%"></div></div></div>
+    <div class="bar-row"><span class="bar-label">阶段 4 · 试运行</span><div class="bar-track"></div></div>
+    <div class="bar-row"><span class="bar-label">阶段 5 · 验收</span><div class="bar-track"></div></div>
+  </div>
+  <div class="table-container" style="margin:0 var(--space-xl)">
+    <div class="table-toolbar">
+      <span class="table-info">阶段记录 · <strong>3 条</strong></span>
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr><th>时间</th><th>阶段</th><th>说明</th><th>状态</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>第 1 年</td><td>立项调研</td><td>调研完成</td><td><span class="badge badge-success">已结束</span></td></tr>
+          <tr><td>第 2 年</td><td>方案论证</td><td>论证通过</td><td><span class="badge badge-success">已结束</span></td></tr>
+          <tr><td>第 3 年</td><td>初期阶段</td><td>还在论证…</td><td><span class="badge badge-warning">进行中</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="callout">启动三年，还在「初期阶段」</div>
+</main>
+</body>
+</html>

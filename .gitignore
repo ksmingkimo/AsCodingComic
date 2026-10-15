@@ -1,0 +1,26 @@
+# 密钥 / 本地配置（API key 只允许存在于 ~\.nano-banana\.env，绝不入库）
+.env
+.env.*
+!.env.example
+
+# 日志
+*.log
+
+# .claude 本地状态：只提交 skills，防止会话状态/本地配置入库
+.claude/*
+!.claude/skills/
+
+# 依赖
+node_modules/
+
+# 内嵌工具仓库的本地 git 备份（tools\nano-banana-2 已按普通文件入库）
+.git.bak/
+
+# Python
+__pycache__/
+*.pyc
+
+# 系统杂项
+Thumbs.db
+Desktop.ini
+.DS_Store

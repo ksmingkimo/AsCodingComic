@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>项目台账 — 永久项目 · 丙</title>
+<link rel="stylesheet" href="../raw/css/dashboard.css">
+<link rel="stylesheet" href="demo-common.css">
+</head>
+<body>
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-brand">
+    <h2>Sunlike ERP</h2>
+    <div class="brand-sub">报表查询系统</div>
+  </div>
+  <div class="sidebar-user">
+    <div class="avatar" id="userAvatar">萝</div>
+    <span id="userName">萝卜（大长老）</span>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="nav-item">报表查询</div>
+    <div class="nav-item active">项目台账</div>
+    <div class="nav-item">预算分析</div>
+    <div class="nav-item">资源调度</div>
+  </nav>
+</aside>
+<main class="main-content">
+  <header class="content-header">
+    <h3>项目台账 — 永久项目 · 丙</h3>
+    <div class="header-actions">
+      <button class="btn btn-secondary btn-sm">刷新</button>
+    </div>
+  </header>
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-label">负责人状态</div>
+      <div class="kpi-value"><span class="badge" style="font-size:16px;background:#FEE2E2;color:#B91C1C">已离职</span></div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">项目状态</div>
+      <div class="kpi-value"><span class="badge badge-warning" style="font-size:16px">仍在烧钱</span></div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">本月支出</div>
+      <div class="kpi-value warn">88,000 灵石</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">离职后累计支出</div>
+      <div class="kpi-value danger">264,000</div>
+      <div class="kpi-label">灵石（3 个月）</div>
+    </div>
+  </div>
+  <div class="chart-card">
+    <div class="chart-title">近三月支出（负责人已离职）</div>
+    <div class="bar-row"><span class="bar-label">4 月</span><div class="bar-track"><div class="bar-fill red" style="width:85%"></div></div><span class="badge badge-warning">80,000</span></div>
+    <div class="bar-row"><span class="bar-label">5 月</span><div class="bar-track"><div class="bar-fill red" style="width:96%"></div></div><span class="badge badge-warning">90,000</span></div>
+    <div class="bar-row"><span class="bar-label">6 月</span><div class="bar-track"><div class="bar-fill red" style="width:100%"></div></div><span class="badge badge-warning">94,000</span></div>
+  </div>
+  <div class="table-container" style="margin:0 var(--space-xl)">
+    <div class="table-toolbar">
+      <span class="table-info">近三月支出 · <strong>3 条</strong></span>
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr><th>月份</th><th>支出（灵石）</th><th>负责人</th><th>状态</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>4 月</td><td>80,000</td><td>已离职</td><td><span class="badge badge-warning">照常支出</span></td></tr>
+          <tr><td>5 月</td><td>90,000</td><td>已离职</td><td><span class="badge badge-warning">照常支出</span></td></tr>
+          <tr><td>6 月</td><td>94,000</td><td>已离职</td><td><span class="badge badge-warning">照常支出</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="callout">负责人已离职 · 灵石还在烧</div>
+</main>
+</body>
+</html>

@@ -1,0 +1,45 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Dialogue,Microsoft YaHei,48,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,2,1,2,30,30,56,1
+Style: FloralTitle,SimHei,46,&H0000D7FF,&H0000D7FF,&H000000FF,&H80000000,-1,0,0,0,100,100,0,0,1,4,1,5,0,0,0,1
+Style: FloralNote,SimHei,46,&H003BEBFF,&H003BEBFF,&H000000FF,&H80000000,-1,0,0,0,100,100,0,0,1,4,1,5,0,0,0,1
+Style: FloralImpact,SimHei,46,&H00FFFFFF,&H00FFFFFF,&H000000FF,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,5,0,0,0,1
+Style: FloralSlogan,SimHei,68,&H0000D7FF,&H0000D7FF,&H000000FF,&H80000000,-1,0,0,0,100,100,0,0,1,4,3,5,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.25,0:00:04.33,Dialogue,,0,0,0,,又到了发月例的日子——账房却支不出一块灵石。
+Dialogue: 0,0:00:00.30,0:00:02.80,FloralTitle,,0,0,0,,{\an5\pos(960,110)}发月例的日子
+Dialogue: 0,0:00:04.85,0:00:06.39,Dialogue,,0,0,0,,金库……空了……
+Dialogue: 0,0:00:06.69,0:00:08.35,Dialogue,,0,0,0,,账上——却写着五百万？！
+Dialogue: 0,0:00:08.65,0:00:11.02,Dialogue,,0,0,0,,弟子们……一块灵石也领不到……
+Dialogue: 0,0:00:11.02,0:00:13.33,Dialogue,,0,0,0,,这钱——账本上根本看不出去了哪！！
+Dialogue: 0,0:00:13.53,0:00:15.77,Dialogue,,0,0,0,,宗、宗主！！出——大事了！！
+Dialogue: 0,0:00:15.87,0:00:19.44,Dialogue,,0,0,0,,账房空了！！这个月的月例……一块灵石也支不出来啊！
+Dialogue: 0,0:00:19.54,0:00:23.25,Dialogue,,0,0,0,,弟子们全堵在账房外头……眼看就要闹起来了！
+Dialogue: 0,0:00:23.45,0:00:27.96,Dialogue,,0,0,0,,不可能！我上个月刚查过账——账上明明躺着五百万灵石！
+Dialogue: 0,0:00:28.16,0:00:32.69,Dialogue,,0,0,0,,账本上的数没错……可账本只记总数，不记死活。
+Dialogue: 0,0:00:32.89,0:00:35.30,Dialogue,,0,0,0,,死活？！灵石还能有死活？！
+Dialogue: 0,0:00:35.50,0:00:40.61,Dialogue,,0,0,0,,宗门这两年上马的三个『永久项目』——个个都是吃灵石的黑洞。
+Dialogue: 0,0:00:40.81,0:00:45.22,Dialogue,,0,0,0,,钱没丢——九成被吸进了洞，账本上照样写着五百万。
+Dialogue: 0,0:00:46.46,0:00:48.56,Dialogue,,0,0,0,,直到大长老把神器请了出来——
+Dialogue: 0,0:00:46.71,0:00:49.31,FloralTitle,,0,0,0,,{\an5\pos(960,110)}SUNLIKE 智能财务分析报表
+Dialogue: 0,0:00:49.86,0:00:53.07,Dialogue,,0,0,0,,第一个『永久项目』：启动三年，还在『初期阶段』。
+Dialogue: 0,0:00:50.21,0:00:52.61,FloralNote,,0,0,0,,{\an5\pos(300,130)}启动 3 年 · 初期阶段
+Dialogue: 0,0:00:53.27,0:00:55.87,Dialogue,,0,0,0,,第二个：耗资百万，产出——零。
+Dialogue: 0,0:00:53.62,0:00:56.02,FloralImpact,,0,0,0,,{\an5\pos(1640,840)}耗资 100 万 · 产出 0
+Dialogue: 0,0:00:56.07,0:00:59.33,Dialogue,,0,0,0,,第三个：负责人早已离职，灵石却还在烧。
+Dialogue: 0,0:00:56.42,0:00:58.82,FloralNote,,0,0,0,,{\an5\pos(300,130)}负责人已离职 · 灵石照烧
+Dialogue: 0,0:00:59.48,0:01:01.28,FloralImpact,,0,0,0,,{\an5\pos(960,840)}九成？！都是黑洞？！
+Dialogue: 0,0:01:00.93,0:01:03.62,Dialogue,,0,0,0,,查！给我把每个项目的水都拧出来！
+Dialogue: 0,0:01:03.72,0:01:07.15,Dialogue,,0,0,0,,从今往后，每一块灵石的去向，都要看得见！
+Dialogue: 0,0:01:07.35,0:01:09.25,Dialogue,,0,0,0,,这就是只看总账的代价
+Dialogue: 0,0:01:07.40,0:01:11.00,FloralSlogan,,0,0,0,,{\an5\pos(960,400)}SUNLIKE 智能财务分析报表
+Dialogue: 0,0:01:08.50,0:01:11.30,FloralSlogan,,0,0,0,,{\an5\pos(960,640)}发现你看不见的真相

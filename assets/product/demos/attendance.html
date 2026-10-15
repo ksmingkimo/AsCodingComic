@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>考勤看板 — 弟子王五</title>
+<link rel="stylesheet" href="../raw/css/dashboard.css">
+<link rel="stylesheet" href="demo-common.css">
+</head>
+<body>
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-brand">
+    <h2>Sunlike ERP</h2>
+    <div class="brand-sub">报表查询系统</div>
+  </div>
+  <div class="sidebar-user">
+    <div class="avatar" id="userAvatar">护</div>
+    <span id="userName">护法（执法堂）</span>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="nav-item">报表查询</div>
+    <div class="nav-item active">考勤看板</div>
+    <div class="nav-item">资源调度</div>
+    <div class="nav-item">人效画像</div>
+  </nav>
+</aside>
+<main class="main-content">
+  <header class="content-header">
+    <h3>考勤看板 — 弟子王五</h3>
+    <div class="header-actions">
+      <button class="btn btn-secondary btn-sm">刷新</button>
+    </div>
+  </header>
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-label">本月出勤</div>
+      <div class="kpi-value">30 天</div>
+      <div class="kpi-label"><span class="badge badge-success" style="font-size:14px">全勤</span></div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">出勤率</div>
+      <div class="kpi-value">100%</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">修炼打卡</div>
+      <div class="kpi-value">4 / 4 周</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">打卡地点</div>
+      <div class="kpi-value warn">1 处（宗门）</div>
+    </div>
+  </div>
+  <div class="chart-card">
+    <div class="chart-title">打卡地点分布</div>
+    <div class="bar-row"><span class="bar-label">宗门</span><div class="bar-track"><div class="bar-fill blue" style="width:100%"></div></div><span class="badge badge-success">100%</span></div>
+    <div class="bar-row"><span class="bar-label">灵泉</span><div class="bar-track"></div><span class="badge badge-warning">0%</span></div>
+  </div>
+  <div class="table-container" style="margin:0 var(--space-xl)">
+    <div class="table-toolbar">
+      <span class="table-info">近三日考勤明细 · <strong>3 条</strong></span>
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr><th>日期</th><th>打卡时间</th><th>打卡地点</th><th>备注</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>七月廿八</td><td>卯时三刻</td><td>宗门</td><td>—</td></tr>
+          <tr><td>七月廿九</td><td>卯时二刻</td><td>宗门</td><td>—</td></tr>
+          <tr><td>七月三十</td><td>卯时三刻</td><td>宗门</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="callout">考勤不会说谎——但考勤只记了「到了」</div>
+</main>
+</body>
+</html>

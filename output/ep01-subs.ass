@@ -1,0 +1,44 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Dialogue,Microsoft YaHei,48,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,2,1,2,30,30,56,1
+Style: FloralTitle,SimHei,46,&H0000D7FF,&H0000D7FF,&H000000FF,&H80000000,-1,0,0,0,100,100,0,0,1,4,1,5,0,0,0,1
+Style: FloralNote,SimHei,46,&H003BEBFF,&H003BEBFF,&H000000FF,&H80000000,-1,0,0,0,100,100,0,0,1,4,1,5,0,0,0,1
+Style: FloralImpact,SimHei,46,&H00FFFFFF,&H00FFFFFF,&H000000FF,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,5,0,0,0,1
+Style: FloralSlogan,SimHei,68,&H0000D7FF,&H0000D7FF,&H000000FF,&H80000000,-1,0,0,0,100,100,0,0,1,4,3,5,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.30,0:00:02.71,Dialogue,,0,0,0,,宗门里发生了很多诡异的事……
+Dialogue: 0,0:00:00.30,0:00:02.80,FloralTitle,,0,0,0,,{\an5\pos(960,110)}天玄宗
+Dialogue: 0,0:00:07.90,0:00:08.74,Dialogue,,0,0,0,,灵石少了……
+Dialogue: 0,0:00:09.16,0:00:10.63,Dialogue,,0,0,0,,却有人突然变强？
+Dialogue: 0,0:00:11.02,0:00:12.75,Dialogue,,0,0,0,,弟子还一个个走了……
+Dialogue: 0,0:00:12.75,0:00:14.64,Dialogue,,0,0,0,,账上竟查不出这笔亏空！
+Dialogue: 0,0:00:15.04,0:00:17.17,Dialogue,,0,0,0,,不对劲……太不对劲了……
+Dialogue: 0,0:00:17.75,0:00:20.34,Dialogue,,0,0,0,,账本、灵石、弟子……
+Dialogue: 0,0:00:20.45,0:00:22.08,Dialogue,,0,0,0,,处处透着古怪……
+Dialogue: 0,0:00:22.64,0:00:24.71,Dialogue,,0,0,0,,我们宗门的五大金牌弟子呢！？
+Dialogue: 0,0:00:27.24,0:00:28.11,Dialogue,,0,0,0,,都离职了啊……
+Dialogue: 0,0:00:29.84,0:00:30.45,Dialogue,,0,0,0,,为什么？！
+Dialogue: 0,0:00:31.44,0:00:32.60,Dialogue,,0,0,0,,他们说『没有前景』……
+Dialogue: 0,0:00:33.54,0:00:36.08,Dialogue,,0,0,0,,没前景？！我们宗门很牛啊！
+Dialogue: 0,0:00:36.69,0:00:40.40,Dialogue,,0,0,0,,直到账房祭出了神器——SUNLIKE 智能财务分析报表
+Dialogue: 0,0:00:36.89,0:00:39.49,FloralTitle,,0,0,0,,{\an5\pos(960,110)}SUNLIKE 智能财务分析报表
+Dialogue: 0,0:00:40.80,0:00:44.69,Dialogue,,0,0,0,,总收入在涨，五个人的个人成长曲线却在跌……
+Dialogue: 0,0:00:41.10,0:00:43.50,FloralNote,,0,0,0,,{\an5\pos(300,130)}宗门总收入 ↑
+Dialogue: 0,0:00:42.30,0:00:44.70,FloralImpact,,0,0,0,,{\an5\pos(1640,840)}金牌弟子成长 ↓
+Dialogue: 0,0:00:45.09,0:00:48.27,Dialogue,,0,0,0,,他们被分散到杂务部门，个人修为停滞了……
+Dialogue: 0,0:00:45.19,0:00:47.79,FloralNote,,0,0,0,,{\an5\pos(300,130)}被分散到杂务部门
+Dialogue: 0,0:00:46.59,0:00:49.19,FloralImpact,,0,0,0,,{\an5\pos(1640,840)}个人修为停滞
+Dialogue: 0,0:00:49.09,0:00:50.89,FloralImpact,,0,0,0,,{\an5\pos(960,840)}原来如此！！
+Dialogue: 0,0:00:50.99,0:00:53.96,Dialogue,,0,0,0,,我竟然没注意到……他们被『浪费』了！
+Dialogue: 0,0:00:56.09,0:00:58.09,Dialogue,,0,0,0,,这就是没有数据分析的代价
+Dialogue: 0,0:00:56.09,0:00:59.69,FloralSlogan,,0,0,0,,{\an5\pos(960,400)}SUNLIKE 智能财务分析报表
+Dialogue: 0,0:00:57.19,0:00:59.99,FloralSlogan,,0,0,0,,{\an5\pos(960,640)}发现你看不见的真相

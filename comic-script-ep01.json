@@ -1,0 +1,1025 @@
+{
+  "meta": {
+    "version": "1.0",
+    "episode": 1,
+    "title": "第一集：为什么我的弟子在修仙排行榜上消失了",
+    "product": "SUNLIKE 智能财务分析报表",
+    "slogan": "SUNLIKE 智能财务分析报表 · 发现你看不见的真相",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "imageDir": "assets/images/ep01/",
+    "refDir": "assets/refs/",
+    "audioDir": "assets/audio/ep01/",
+    "productDir": "assets/product/shots/",
+    "sfxDir": "assets/sfx/",
+    "videoDir": "assets/video/ep01/",
+    "veo": {
+      "model": "veo-3.1-fast-generate-preview",
+      "resolution": "1080p",
+      "durationSeconds": 8,
+      "aspectRatio": "16:9",
+      "negativePrompt": "cartoon, anime, text, watermark, subtitles, distorted faces, extra limbs, morphing, flickering",
+      "ratePerSecond": 0.12
+    },
+    "lang": "zh-cn",
+    "styleLock": {
+      "zh": "真人影视剧照风格，写实仙侠剧质感，自然皮肤纹理与布料细节，电影级体积光，浅景深，胶片质感",
+      "en": "Photorealistic cinematic live-action film still, realistic Chinese xianxia TV drama aesthetic, natural skin texture and fabric detail, volumetric lighting, shallow depth of field, 35mm film look"
+    },
+    "negative": {
+      "zh": "低质量、模糊、多余手指、肢体畸形、画面文字、乱码文字、水印、logo、多张脸、动漫、卡通、二次元、赛璐璐平涂、塑料皮肤、CG渲染感",
+      "en": "low quality, blurry, extra fingers, deformed limbs, text, garbled text, watermark, logo, multiple faces, anime, cartoon, manga, 2D illustration, cel shading, chibi, plastic skin, doll-like, CGI render, video game look"
+    },
+    "defaults": {
+      "leadInMs": 300,
+      "tailMs": 500,
+      "minHoldMs": 1200,
+      "transition": {
+        "name": "fade",
+        "durMs": 400
+      }
+    },
+    "whitelist": ["s09-open-sunlike", "s10-deduction", "s11-truth"],
+    "budget": { "sceneImages": 14, "refs": 6 },
+    "bgm": {
+      "phases": { "body": "s03-confused", "product": "s09-open-sunlike" },
+      "tracks": ["Ossuary 6 - Air.mp3", "Finding the Balance.mp3", "Volatile Reaction.mp3"],
+      "xfade": 2
+    },
+    "productShots": [
+      { "source": "raw/界面1.png", "out": "ui-main.png", "prep": "crop1920" },
+      { "source": "raw/界面2.png", "out": "ui-query.png", "prep": "crop1920" },
+      { "source": "raw/界面4.png", "out": "ui-ai.png", "prep": "crop1920" }
+    ],
+    "docsNotes": [
+      "**s09** 旁白「直到账房祭出了神器——SUNLIKE 智能财务分析报表」为新增衔接词（原剧本无此句），待用户确认（见进度表.md 待确认问题）。",
+      "**s10/s11** 旁白为原剧本「真相」bullets 的改写（推理镜头旁白，非对白），已列入 V0 白名单。"
+    ]
+  },
+  "characters": {
+    "caiji": {
+      "name": "菜鸡",
+      "title": "宗主",
+      "voice": "zh-CN-YunjianNeural",
+      "rate": "-4%",
+      "anchor": {
+        "zh": "菜鸡（宗主）：60岁男，国字脸、三角眼、浓眉、白发白须，紫色宗主袍绣金色云纹，头戴高冠，手持白色拂尘。不得更换发型胡须、不得加伤疤、不得变年轻、不得更换袍色",
+        "en": "Caiji the sect master: a 60-year-old man with a square face, fierce triangular eyes, thick eyebrows, white hair and white beard, wearing a purple sect master robe with golden cloud patterns, a tall jade crown, holding a white horsetail whisk. Do not change his hairstyle, beard, crown, or robe color"
+      }
+    },
+    "guoba": {
+      "name": "锅巴",
+      "title": "内门长老",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": "-8%",
+      "anchor": {
+        "zh": "锅巴（内门长老）：48岁男，圆脸、双下巴、睡眼惺忪、头发微乱，灰色长老袍，腰间挂锅铲和零食袋。不得画成瘦子、不得精神抖擞、不得更换袍色",
+        "en": "Guoba the inner elder: a 48-year-old plump man with a round face, double chin, sleepy half-closed eyes, slightly messy hair, wearing a plain grey elder robe, a kitchen spatula and a snack pouch hanging at his waist. Do not make him thin or energetic, do not change his robe color"
+      }
+    },
+    "luobo": {
+      "name": "萝卜",
+      "title": "大长老",
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": "+2%",
+      "anchor": {
+        "zh": "萝卜（大长老）：外貌如18岁少女，鹅蛋脸无皱纹、杏眼，青色锦袍，珍珠发簪，宝珠手串。不得画老、不得朴素",
+        "en": "Luobo the grand elder: looks like an 18-year-old young woman with a flawless oval face, almond eyes, wearing a cyan brocade robe, a pearl hairpin, and a precious-bead bracelet. Do not age her or make her look plain"
+      }
+    },
+    "narrator": {
+      "name": "旁白",
+      "title": "",
+      "voice": "zh-CN-YunyangNeural",
+      "rate": "+4%"
+    }
+  },
+  "refs": [
+    {
+      "file": "ref-caiji.png",
+      "char": "caiji",
+      "prompt": {
+        "zh": "菜鸡全身立绘：60岁男宗主，白发白须，三角眼浓眉，国字脸，面相凶悍但眼神透出糊涂，紫色宗主袍绣金色云纹，头戴高冠，手持拂尘，站姿，影棚灯光纯色浅色背景，无文字",
+        "en": "Full-body character reference portrait of Caiji, a 60-year-old male cultivator sect master, white hair and white beard, fierce triangular eyes with thick eyebrows, square face, fierce-looking but slightly confused gaze, wearing a purple sect master robe with golden cloud patterns and a tall crown, holding a horsetail whisk, standing pose, studio lighting, plain light background, no text"
+      }
+    },
+    {
+      "file": "ref-guoba.png",
+      "char": "guoba",
+      "prompt": {
+        "zh": "锅巴全身立绘：48岁胖胖的男长老，圆脸双下巴，睡眼惺忪，头发微乱，灰色长老袍，腰间挂着一把锅铲，一手拎着零食袋，站姿，影棚灯光纯色浅色背景，无文字",
+        "en": "Full-body character reference portrait of Guoba, a 48-year-old chubby male cultivator elder, round face with double chin, sleepy half-closed eyes, slightly messy hair, wearing a grey sect elder robe, a kitchen spatula hanging at his waist, holding a snack bag in one hand, standing pose, studio lighting, plain light background, no text"
+      }
+    },
+    {
+      "file": "ref-luobo.png",
+      "char": "luobo",
+      "prompt": {
+        "zh": "萝卜全身立绘：50岁女长老但保养得像18岁，鹅蛋脸无皱纹，杏眼，青色锦袍，珍珠发簪，手腕一串宝珠，气质爽朗精致，站姿，影棚灯光纯色浅色背景，无文字",
+        "en": "Full-body character reference portrait of Luobo, a 50-year-old female cultivator elder who looks like a beautiful 18-year-old, oval face without wrinkles, almond eyes, wearing a cyan brocade robe and a pearl hairpin, a string of treasure beads on her wrist, cheerful and elegant, standing pose, studio lighting, plain light background, no text"
+      }
+    },
+    {
+      "file": "ref-caiji-tv.png",
+      "char": "caiji",
+      "prompt": {
+        "zh": "菜鸡三视图：同一人正/侧/背三视图并排，全身，60岁男宗主，白发白须，三角眼浓眉，国字脸，紫色宗主袍绣金色云纹，头戴高冠，手持拂尘，三视图造型完全一致，站姿，影棚灯光纯色浅色背景，无文字",
+        "en": "Turn-around character sheet of Caiji: front view, side view and back view of the same person side by side, full body, a 60-year-old male cultivator sect master, white hair and white beard, fierce triangular eyes with thick eyebrows, square face, wearing a purple sect master robe with golden cloud patterns and a tall crown, holding a horsetail whisk, identical appearance across all three views, standing pose, studio lighting, plain light background, no text"
+      }
+    },
+    {
+      "file": "ref-guoba-tv.png",
+      "char": "guoba",
+      "prompt": {
+        "zh": "锅巴三视图：同一人正/侧/背三视图并排，全身，48岁胖胖的男长老，圆脸双下巴，睡眼惺忪，头发微乱，灰色长老袍，腰间挂着一把锅铲，一手拎着零食袋，三视图造型完全一致，站姿，影棚灯光纯色浅色背景，无文字",
+        "en": "Turn-around character sheet of Guoba: front view, side view and back view of the same person side by side, full body, a 48-year-old chubby male cultivator elder, round face with double chin, sleepy half-closed eyes, slightly messy hair, wearing a grey sect elder robe, a kitchen spatula hanging at his waist, holding a snack bag in one hand, identical appearance across all three views, standing pose, studio lighting, plain light background, no text"
+      }
+    },
+    {
+      "file": "ref-luobo-tv.png",
+      "char": "luobo",
+      "prompt": {
+        "zh": "萝卜三视图：同一人正/侧/背三视图并排，全身，50岁女长老保养得像18岁，鹅蛋脸无皱纹，杏眼，青色锦袍，珍珠发簪，手腕一串宝珠，气质爽朗精致，三视图造型完全一致，站姿，影棚灯光纯色浅色背景，无文字",
+        "en": "Turn-around character sheet of Luobo: front view, side view and back view of the same person side by side, full body, a 50-year-old female cultivator elder who looks like a beautiful 18-year-old, oval face without wrinkles, almond eyes, wearing a cyan brocade robe and a pearl hairpin, a string of treasure beads on her wrist, cheerful and elegant, identical appearance across all three views, standing pose, studio lighting, plain light background, no text"
+      }
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s01-opener",
+      "title": "诡异开场",
+      "type": "image",
+      "image": {
+        "file": "s01-opener.png",
+        "prompt": {
+          "zh": "夜色中的天玄宗山门，山门上方悬挂一块古旧木匾，匾上三个金色大字「天玄宗」写得清晰工整。乌云压顶，紫色雾气弥漫，石阶空无一人，诡异压抑的氛围，构图主体山门居中。画面内除牌匾上的「天玄宗」三个字外，不得出现任何其他文字。",
+          "en": "Tianxuan Sect mountain gate at night under ominous dark clouds and drifting purple mist, empty stone steps, eerie unsettling atmosphere, gate centered. Above the gate hangs an ancient wooden plaque painted with exactly three large gold Chinese characters 天玄宗 (the sect name, written clearly and correctly). NO other text, letters or signs anywhere else in the frame."
+        }
+      },
+      "video": {
+        "file": "s01-opener.mp4",
+        "sourceImage": "s01-opener.png",
+        "actionPrompt": {
+          "en": "Cinematic live-action shot, 35mm film look: heavy purple mist slowly drifting across the mountain gate of the Tianxuan Sect at night, dark clouds rolling overhead, wind blowing through pine trees, lanterns swaying gently, empty stone steps. Slow eerie atmosphere with subtle natural motion. Steady camera. No text, no watermark, no subtitles, no people."
+        }
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.12,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "audio": [
+        {
+          "role": "narrator",
+          "text": "宗门里发生了很多诡异的事……",
+          "isNarration": true,
+          "rate": "-10%",
+          "pitch": "-4Hz"
+        }
+      ],
+      "florals": [
+        {
+          "text": "天玄宗",
+          "tMs": 300,
+          "durMs": 2500,
+          "pos": "top-center",
+          "style": "title"
+        }
+      ],
+      "sfx": [
+        "wind"
+      ],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 3500
+      },
+      "verify": {
+        "brightness": "dark"
+      }
+    },
+    {
+      "id": "s02-montage",
+      "title": "诡异事件四连快切",
+      "type": "montage",
+      "image": {
+        "file": "s02-montage",
+        "altImages": [
+          {
+            "file": "s02a-money.png",
+            "camera": {
+              "mode": "zoomIn",
+              "startZoom": 1,
+              "endZoom": 1.18,
+              "startFrac": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "endFrac": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "prompt": {
+              "zh": "宗门宝库内景，一只原本鼓鼓的灵石袋瘪了，灵石散落一地，一束惨白月光从上方照下，无人物，搞笑漫画氛围",
+              "en": "Inside a dim treasure vault of a cultivation sect, a bulging spirit-stone pouch now shriveled and empty, spirit stones scattered on the floor, a beam of cold pale moonlight from above, comedic mood, no people"
+            }
+          },
+          {
+            "file": "s02b-buff.png",
+            "camera": {
+              "mode": "zoomIn",
+              "startZoom": 1,
+              "endZoom": 1.18,
+              "startFrac": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "endFrac": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "prompt": {
+              "zh": "一名年轻弟子突然爆发出刺眼金光，衣袍和纸张被气浪吹飞，背景是模糊的围观人群，无清晰人脸，夸张漫画效果",
+              "en": "A young disciple in sect robes suddenly erupting with blinding golden aura, robes and papers blown away by the shockwave, blurred shocked onlookers in background, no clear faces, exaggerated comedic effect"
+            }
+          },
+          {
+            "file": "s02c-leave.png",
+            "camera": {
+              "mode": "zoomIn",
+              "startZoom": 1,
+              "endZoom": 1.18,
+              "startFrac": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "endFrac": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "prompt": {
+              "zh": "一名弟子的背影，背着行囊沿山路走下宗门，黄昏孤寂的光线，看不见脸，落寞氛围",
+              "en": "A disciple seen from behind walking down a mountain path away from the sect with a travel bundle on his back, lonely dusk lighting, no visible face, melancholic mood"
+            }
+          },
+          {
+            "file": "s02d-ledger.png",
+            "camera": {
+              "mode": "zoomIn",
+              "startZoom": 1,
+              "endZoom": 1.18,
+              "startFrac": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "endFrac": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "prompt": {
+              "zh": "宗门账房一片混乱，算盘冒烟，账本满天飞，一个被账本淹没的账房先生剪影，搞笑混乱感，无清晰人脸",
+              "en": "Accounting hall of a cultivation sect in chaos, a smoking abacus, account books flying everywhere, a silhouette of an accountant buried under flying ledgers, comedic chaos, no clear faces"
+            }
+          }
+        ]
+      },
+      "camera": {
+        "mode": "static",
+        "startZoom": 1,
+        "endZoom": 1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "audio": [
+        {
+          "role": "caiji",
+          "text": "灵石少了……",
+          "isNarration": false,
+          "rate": "+8%",
+          "pitch": "+6Hz",
+          "delayMs": 0
+        },
+        {
+          "role": "caiji",
+          "text": "却有人突然变强？",
+          "isNarration": false,
+          "rate": "+12%",
+          "pitch": "+8Hz",
+          "delayMs": 414
+        },
+        {
+          "role": "caiji",
+          "text": "弟子还一个个走了……",
+          "isNarration": false,
+          "rate": "-6%",
+          "pitch": "-3Hz",
+          "delayMs": 393
+        },
+        {
+          "role": "caiji",
+          "text": "账上竟查不出这笔亏空！",
+          "isNarration": false,
+          "rate": "+15%",
+          "pitch": "+12Hz",
+          "delayMs": 0
+        }
+      ],
+      "florals": [],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 5800
+      },
+      "verify": {
+        "brightness": "mixed"
+      }
+    },
+    {
+      "id": "s03-confused",
+      "title": "宗主挠头困惑",
+      "type": "image",
+      "image": {
+        "file": "s03-confused.png",
+        "refs": [
+          "ref-caiji.png",
+          "ref-caiji-tv.png"
+        ],
+        "roles": [
+          "caiji"
+        ],
+        "prompt": {
+          "zh": "菜鸡在大殿中扶额挠头，眉头紧锁，困惑愁容，中近景",
+          "en": "Caiji rubbing his forehead and scratching his head in the grand hall, frowning with confusion and distress, medium close-up"
+        }
+      },
+      "video": {
+        "file": "s03-confused.mp4",
+        "sourceImage": "s03-confused.png",
+        "actionPrompt": {
+          "en": "Cinematic live-action shot, 35mm film look: the sect master in purple robes and golden crown pacing back and forth in the grand hall, scratching his head and frowning with confusion, sighing and muttering to himself. Medium close-up. Steady camera with a gentle dolly-in. Characters must look identical to the reference image, same costume and face. No text, no watermark, no subtitles."
+        }
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.3,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.42
+        }
+      },
+      "audio": [
+        {
+          "role": "caiji",
+          "text": "不对劲……太不对劲了……",
+          "isNarration": false,
+          "rate": "-12%",
+          "pitch": "-4Hz",
+          "delayMs": 0
+        },
+        {
+          "role": "caiji",
+          "text": "账本、灵石、弟子……",
+          "isNarration": false,
+          "rate": "-10%",
+          "pitch": "-4Hz",
+          "delayMs": 580
+        },
+        {
+          "role": "caiji",
+          "text": "处处透着古怪……",
+          "isNarration": false,
+          "rate": "-10%",
+          "pitch": "-5Hz",
+          "delayMs": 110
+        }
+      ],
+      "florals": [],
+      "sfx": [
+        "thud"
+      ],
+      "duration": {
+        "strategy": "fixed",
+        "holdMs": 8000
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s04-hall-ask",
+      "title": "宗主拍案质问",
+      "type": "image",
+      "image": {
+        "file": "s04-hall-ask.png",
+        "refs": [
+          "ref-caiji.png",
+          "ref-guoba.png",
+          "ref-caiji-tv.png",
+          "ref-guoba-tv.png"
+        ],
+        "roles": [
+          "caiji",
+          "guoba"
+        ],
+        "prompt": {
+          "zh": "大殿全景：菜鸡坐于高台案后拍案质问，神情激动；锅巴懒散站在堂下，睡眼惺忪，两人一上一下构图",
+          "en": "Wide shot of a grand hall: Caiji sitting behind a desk on the platform, slamming the table angrily; below the platform stands Guoba, looking lazy and sleepy; two figures in a top-bottom composition"
+        }
+      },
+      "video": {
+        "file": "s04-hall-ask.mp4",
+        "sourceImage": "s04-hall-ask.png",
+        "outMs": 5000,
+        "actionPrompt": {
+          "en": "Cinematic live-action shot, 35mm film look: the sect master in purple robes behind a desk slams the table with both hands and stands up angrily, shouting and pointing forward; the lazy elder in gray robes below the platform startles awake, rubs his eyes, then shrugs sheepishly. Camera holds steady on a medium-wide shot with a very gentle dolly-in. Grand ancient Chinese hall, lantern light. Characters must look identical to the reference image, same costumes and faces. No text, no watermark, no subtitles."
+        }
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "audio": [
+        {
+          "role": "caiji",
+          "text": "我们宗门的五大金牌弟子呢！？",
+          "isNarration": false,
+          "rate": "+12%",
+          "pitch": "+10Hz"
+        }
+      ],
+      "florals": [],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 3000
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s05-guoba-reply",
+      "title": "锅巴懒散回答",
+      "type": "image",
+      "image": {
+        "file": "s05-guoba-reply.png",
+        "refs": [
+          "ref-guoba.png",
+          "ref-guoba-tv.png"
+        ],
+        "roles": [
+          "guoba"
+        ],
+        "prompt": {
+          "zh": "锅巴近景特写，懒散地耸耸肩，一副事不关己的样子，腰间锅铲可见",
+          "en": "Close-up of Guoba shrugging lazily with an indifferent look, kitchen spatula visible at his waist"
+        }
+      },
+      "video": {
+        "file": "s05-guoba-reply.mp4",
+        "sourceImage": "s05-guoba-reply.png",
+        "outMs": 3000,
+        "actionPrompt": {
+          "en": "Cinematic live-action shot, 35mm film look: the lazy chubby elder in grey robes shrugging with an indifferent look, yawning and rubbing his sleepy eyes, a kitchen spatula hanging at his waist. Close-up. Steady camera with a very subtle zoom. Characters must look identical to the reference image, same costume and face. No text, no watermark, no subtitles."
+        }
+      },
+      "camera": {
+        "mode": "zoomOut",
+        "startZoom": 1.15,
+        "endZoom": 1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "audio": [
+        {
+          "role": "guoba",
+          "text": "都离职了啊……",
+          "isNarration": false,
+          "rate": "-12%",
+          "pitch": "-3Hz"
+        }
+      ],
+      "florals": [],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 2400
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s06-caiji-why",
+      "title": "宗主震惊追问",
+      "type": "image",
+      "image": {
+        "file": "s04-hall-ask.png",
+        "reuse": true
+      },
+      "video": {
+        "file": "s04-hall-ask.mp4",
+        "sourceImage": "s04-hall-ask.png",
+        "inMs": 2000,
+        "outMs": 4000,
+        "actionPrompt": {
+          "en": "reuse of s04-hall-ask.mp4, slice 2.0s-4.0s"
+        }
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.3,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.3
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.28
+        }
+      },
+      "audio": [
+        {
+          "role": "caiji",
+          "text": "为什么？！",
+          "isNarration": false,
+          "rate": "+18%",
+          "pitch": "+15Hz"
+        }
+      ],
+      "florals": [],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 2000
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s07-guoba-future",
+      "title": "没有前景",
+      "type": "image",
+      "image": {
+        "file": "s05-guoba-reply.png",
+        "reuse": true
+      },
+      "video": {
+        "file": "s05-guoba-reply.mp4",
+        "sourceImage": "s05-guoba-reply.png",
+        "inMs": 3500,
+        "outMs": 6000,
+        "actionPrompt": {
+          "en": "reuse of s05-guoba-reply.mp4, slice 3.5s-6.0s"
+        }
+      },
+      "camera": {
+        "mode": "panUp",
+        "startZoom": 1,
+        "endZoom": 1.12,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.6
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.42
+        }
+      },
+      "audio": [
+        {
+          "role": "guoba",
+          "text": "他们说『没有前景』……",
+          "isNarration": false
+        }
+      ],
+      "florals": [],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 2500
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s08-caiji-boast",
+      "title": "我们宗门很牛啊",
+      "type": "image",
+      "image": {
+        "file": "s04-hall-ask.png",
+        "reuse": true
+      },
+      "video": {
+        "file": "s04-hall-ask.mp4",
+        "sourceImage": "s04-hall-ask.png",
+        "inMs": 4000,
+        "outMs": 7500,
+        "actionPrompt": {
+          "en": "reuse of s04-hall-ask.mp4, slice 4.0s-7.5s"
+        }
+      },
+      "camera": {
+        "mode": "zoomOut",
+        "startZoom": 1.25,
+        "endZoom": 1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "audio": [
+        {
+          "role": "caiji",
+          "text": "没前景？！我们宗门很牛啊！",
+          "isNarration": false,
+          "rate": "+10%",
+          "pitch": "+8Hz"
+        }
+      ],
+      "florals": [],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 3200
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s09-open-sunlike",
+      "title": "转折：打开SUNLIKE",
+      "type": "product",
+      "product": {
+        "file": "shots/ui-main.png",
+        "source": "raw/界面1.png",
+        "highlight": []
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.25,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "audio": [
+        {
+          "role": "narrator",
+          "text": "直到账房祭出了神器——SUNLIKE 智能财务分析报表",
+          "isNarration": true,
+          "rate": "+8%",
+          "pitch": "+4Hz"
+        }
+      ],
+      "florals": [
+        {
+          "text": "SUNLIKE 智能财务分析报表",
+          "tMs": 500,
+          "durMs": 2600,
+          "pos": "top-center",
+          "style": "title"
+        }
+      ],
+      "sfx": [
+        "ding"
+      ],
+      "transition": {
+        "name": "fadewhite",
+        "durMs": 350
+      },
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 4500
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s10-deduction",
+      "title": "推理一：总收入涨，个人成长跌",
+      "type": "product",
+      "product": {
+        "file": "shots/ui-query.png",
+        "source": "raw/界面2.png",
+        "highlight": []
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.3,
+        "startFrac": {
+          "x": 0.6,
+          "y": 0.6
+        },
+        "endFrac": {
+          "x": 0.45,
+          "y": 0.5
+        }
+      },
+      "audio": [
+        {
+          "role": "narrator",
+          "text": "总收入在涨，五个人的个人成长曲线却在跌……",
+          "isNarration": true,
+          "rate": "-4%"
+        }
+      ],
+      "florals": [
+        {
+          "text": "宗门总收入 ↑",
+          "tMs": 600,
+          "durMs": 2400,
+          "pos": "top-left",
+          "style": "note"
+        },
+        {
+          "text": "金牌弟子成长 ↓",
+          "tMs": 1800,
+          "durMs": 2400,
+          "pos": "bottom-right",
+          "style": "impact"
+        }
+      ],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 4500
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s11-truth",
+      "title": "推理二：真相大白",
+      "type": "product",
+      "product": {
+        "file": "shots/ui-ai.png",
+        "source": "raw/界面4.png",
+        "highlight": []
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.2,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "endFrac": {
+          "x": 0.45,
+          "y": 0.42
+        }
+      },
+      "audio": [
+        {
+          "role": "narrator",
+          "text": "他们被分散到杂务部门，个人修为停滞了……",
+          "isNarration": true,
+          "pitch": "-2Hz"
+        }
+      ],
+      "florals": [
+        {
+          "text": "被分散到杂务部门",
+          "tMs": 400,
+          "durMs": 2600,
+          "pos": "top-left",
+          "style": "note"
+        },
+        {
+          "text": "个人修为停滞",
+          "tMs": 1800,
+          "durMs": 2600,
+          "pos": "bottom-right",
+          "style": "impact"
+        }
+      ],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 4500
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s12-facepalm",
+      "title": "表情包：真相大白",
+      "type": "image",
+      "image": {
+        "file": "s12-facepalm.png",
+        "refs": [
+          "ref-caiji.png",
+          "ref-guoba.png",
+          "ref-caiji-tv.png",
+          "ref-guoba-tv.png"
+        ],
+        "roles": [
+          "caiji",
+          "guoba"
+        ],
+        "prompt": {
+          "zh": "喜剧表情包定格：菜鸡瞪大眼睛，嘴巴大张，石化僵硬；身后锅巴满头大汗僵笑，两人同框，夸张喜剧表情",
+          "en": "Comedy reaction shot: Caiji frozen in shock, eyes bulging wide, mouth agape, petrified like a statue; behind him Guoba sweating with a stiff embarrassed smile, both in frame, exaggerated comedic expression"
+        }
+      },
+      "camera": {
+        "mode": "static",
+        "startZoom": 1,
+        "endZoom": 1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "audio": [],
+      "florals": [
+        {
+          "text": "原来如此！！",
+          "tMs": 200,
+          "durMs": 1800,
+          "pos": "bottom-center",
+          "style": "impact"
+        }
+      ],
+      "sfx": [],
+      "duration": {
+        "strategy": "fixed",
+        "holdMs": 2200
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s13-regret",
+      "title": "宗主懊悔",
+      "type": "image",
+      "image": {
+        "file": "s13-regret.png",
+        "refs": [
+          "ref-caiji.png",
+          "ref-caiji-tv.png"
+        ],
+        "roles": [
+          "caiji"
+        ],
+        "prompt": {
+          "zh": "菜鸡低头握拳，神情懊悔，大殿背景压暗，中景，情绪收敛",
+          "en": "Caiji the sect master lowering his head and clenching his fists, remorseful and regretful expression, grand hall background dimmed, medium shot, restrained emotion"
+        }
+      },
+      "video": {
+        "file": "s13-regret.mp4",
+        "sourceImage": "s13-regret.png",
+        "outMs": 5500,
+        "actionPrompt": {
+          "en": "Cinematic live-action shot, 35mm film look: the sect master in purple robes lowering his head and clenching his fists in remorse, slowly looking up with a pained expression, the grand hall dimmed behind him. Medium shot, restrained emotion. Steady camera with a very slow zoom-out. Characters must look identical to the reference image, same costume and face. No text, no watermark, no subtitles."
+        }
+      },
+      "camera": {
+        "mode": "zoomOut",
+        "startZoom": 1.1,
+        "endZoom": 1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.42
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "audio": [
+        {
+          "role": "caiji",
+          "text": "我竟然没注意到……他们被『浪费』了！",
+          "isNarration": false,
+          "rate": "-8%",
+          "pitch": "-6Hz"
+        }
+      ],
+      "florals": [],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 3600
+      },
+      "verify": {
+        "brightness": "mixed"
+      }
+    },
+    {
+      "id": "s14-endcard",
+      "title": "结尾字幕卡",
+      "type": "textcard",
+      "image": {
+        "file": ""
+      },
+      "background": "0x0b0b1a",
+      "camera": {
+        "mode": "static",
+        "startZoom": 1,
+        "endZoom": 1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "audio": [
+        {
+          "role": "narrator",
+          "text": "这就是没有数据分析的代价",
+          "isNarration": true
+        }
+      ],
+      "florals": [
+        {
+          "text": "SUNLIKE 智能财务分析报表",
+          "tMs": 300,
+          "durMs": 3600,
+          "pos": "top",
+          "style": "slogan"
+        },
+        {
+          "text": "发现你看不见的真相",
+          "tMs": 1400,
+          "durMs": 2800,
+          "pos": "bottom",
+          "style": "slogan"
+        }
+      ],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 4200
+      },
+      "verify": {
+        "brightness": "dark"
+      }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>项目台账 — 永久项目 · 乙</title>
+<link rel="stylesheet" href="../raw/css/dashboard.css">
+<link rel="stylesheet" href="demo-common.css">
+</head>
+<body>
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-brand">
+    <h2>Sunlike ERP</h2>
+    <div class="brand-sub">报表查询系统</div>
+  </div>
+  <div class="sidebar-user">
+    <div class="avatar" id="userAvatar">萝</div>
+    <span id="userName">萝卜（大长老）</span>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="nav-item">报表查询</div>
+    <div class="nav-item active">项目台账</div>
+    <div class="nav-item">预算分析</div>
+    <div class="nav-item">资源调度</div>
+  </nav>
+</aside>
+<main class="main-content">
+  <header class="content-header">
+    <h3>项目台账 — 永久项目 · 乙</h3>
+    <div class="header-actions">
+      <button class="btn btn-secondary btn-sm">刷新</button>
+    </div>
+  </header>
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-label">累计耗资</div>
+      <div class="kpi-value danger">1,000,000</div>
+      <div class="kpi-label">灵石</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">累计产出</div>
+      <div class="kpi-value danger">0</div>
+      <div class="kpi-label">产出 / 投入比 0%</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">项目状态</div>
+      <div class="kpi-value"><span class="badge badge-warning" style="font-size:16px">持续投入</span></div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">本月支出</div>
+      <div class="kpi-value warn">94,000 灵石</div>
+    </div>
+  </div>
+  <div class="chart-card">
+    <div class="chart-title">支出构成（灵石）</div>
+    <div class="bar-row"><span class="bar-label">法器采购</span><div class="bar-track"><div class="bar-fill blue" style="width:100%"></div></div><span class="badge badge-info">400,000</span></div>
+    <div class="bar-row"><span class="bar-label">洞府改造</span><div class="bar-track"><div class="bar-fill blue" style="width:75%"></div></div><span class="badge badge-info">300,000</span></div>
+    <div class="bar-row"><span class="bar-label">试验消耗</span><div class="bar-track"><div class="bar-fill blue" style="width:75%"></div></div><span class="badge badge-info">300,000</span></div>
+    <div class="bar-row"><span class="bar-label">对应产出</span><div class="bar-track"></div><span class="badge" style="background:#FEE2E2;color:#B91C1C">0</span></div>
+  </div>
+  <div class="table-container" style="margin:0 var(--space-xl)">
+    <div class="table-toolbar">
+      <span class="table-info">支出明细 · <strong>3 条</strong></span>
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr><th>支出项</th><th>金额（灵石）</th><th>对应产出</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>法器采购</td><td>400,000</td><td><span class="badge badge-muted">无</span></td></tr>
+          <tr><td>洞府改造</td><td>300,000</td><td><span class="badge badge-muted">无</span></td></tr>
+          <tr><td>试验消耗</td><td>300,000</td><td><span class="badge badge-muted">无</span></td></tr>
+          <tr><td><strong>合计</strong></td><td><strong>1,000,000</strong></td><td><span class="badge badge-warning">产出 0</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="callout">耗资百万 · 产出为零</div>
+</main>
+</body>
+</html>

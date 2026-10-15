@@ -1,0 +1,1055 @@
+{
+  "meta": {
+    "version": "1.0",
+    "episode": 3,
+    "title": "第三集：这个弟子为什么既在上班，又在旅游",
+    "product": "SUNLIKE 智能财务分析报表",
+    "slogan": "SUNLIKE 智能财务分析报表 · 发现你看不见的真相",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "imageDir": "assets/images/ep03/",
+    "refDir": "assets/refs/",
+    "audioDir": "assets/audio/ep03/",
+    "productDir": "assets/product/shots/",
+    "sfxDir": "assets/sfx/",
+    "videoDir": "assets/video/ep03/",
+    "veo": {
+      "model": "veo-3.1-fast-generate-preview",
+      "resolution": "1080p",
+      "durationSeconds": 8,
+      "aspectRatio": "16:9",
+      "negativePrompt": "cartoon, anime, text, watermark, subtitles, distorted faces, extra limbs, morphing, flickering",
+      "ratePerSecond": 0.12
+    },
+    "lang": "zh-cn",
+    "styleLock": {
+      "zh": "真人影视剧照风格，写实仙侠剧质感，自然皮肤纹理与布料细节，电影级体积光，浅景深，胶片质感",
+      "en": "Photorealistic cinematic live-action film still, realistic Chinese xianxia TV drama aesthetic, natural skin texture and fabric detail, volumetric lighting, shallow depth of field, 35mm film look"
+    },
+    "negative": {
+      "zh": "低质量、模糊、多余手指、肢体畸形、画面文字、乱码文字、水印、logo、多张脸、动漫、卡通、二次元、赛璐璐平涂、塑料皮肤、CG渲染感",
+      "en": "low quality, blurry, extra fingers, deformed limbs, text, garbled text, watermark, logo, multiple faces, anime, cartoon, manga, 2D illustration, cel shading, chibi, plastic skin, doll-like, CGI render, video game look"
+    },
+    "defaults": {
+      "leadInMs": 200,
+      "tailMs": 300,
+      "minHoldMs": 1200,
+      "transition": {
+        "name": "fade",
+        "durMs": 400
+      }
+    },
+    "whitelist": [],
+    "budget": { "sceneImages": 10, "refs": 4 },
+    "bgm": {
+      "phases": { "body": "s03-hufa-report", "product": "s09-open-sunlike" },
+      "tracks": ["Ossuary 6 - Air.mp3", "Finding the Balance.mp3", "Volatile Reaction.mp3"],
+      "xfade": 2
+    },
+    "productShots": [
+      { "source": "demos/attendance.html", "out": "ui-attendance.png", "prep": "headless" },
+      { "source": "demos/dispatch.html", "out": "ui-dispatch.png", "prep": "headless" },
+      { "source": "demos/ghost.html", "out": "ui-ghost.png", "prep": "headless" }
+    ],
+    "docsNotes": [
+      "**s09** 复用 ep01 的 `shots/ui-main.png` 主界面截图作为「神器」登场画面（品牌一致性，不重新截图；神器三集递进收官：ep01 祭出 → ep02 请出 → ep03 宗主自己打开）。",
+      "**s10–s12** 三张真相截图为流水线自产 demo 页（`assets/product/demos/attendance|dispatch|ghost.html`）的 Chrome headless 截图，页面数据即本集真相（考勤全勤→五部调度→幽灵人效）；截图链路失败则退回 ep01 手法（raw 界面图 + 花字旁白）。",
+      "**s02** 蒙太奇 delayMs 为占位值，TTS 实测后按「声音领先切点 300–500ms」反推回填，再重跑 build-timeline 复核（ep01/ep02 同流程）。",
+      "**s09** 结构说明：34 字长句「上回是五个金牌弟子被拆去杂务……」（回扣 ep01）无处安放于 s03–s08，与旁白「这一次，宗主自己把神器打开了——」同落 s09 产品转场景，台词顺序与剧情脚本完全一致；本集零冻帧设计——所有视频 outMs 在 TTS 实测后按「台词时长+600ms 边距」收紧，规避 ep02 s03 冻帧尾巴问题。",
+      "**节奏**：本集 20 句 393 字，密度与 ep02 相当；全速收紧后估 73–77s，贴 30–75s 规格上限（V4）。超限处置：降时长阶梯（旁白真相三连提速 / 蒙太奇 delay 归零+护法提速 / 长句提速）→ 仍超则向用户征询放宽上限（治理变更，不擅自改）。"
+    ]
+  },
+  "characters": {
+    "caiji": {
+      "name": "菜鸡",
+      "title": "宗主",
+      "voice": "zh-CN-YunjianNeural",
+      "rate": "-4%",
+      "anchor": {
+        "zh": "菜鸡（宗主）：60岁男，国字脸、三角眼、浓眉、白发白须，紫色宗主袍绣金色云纹，头戴高冠，手持白色拂尘。不得更换发型胡须、不得加伤疤、不得变年轻、不得更换袍色",
+        "en": "Caiji the sect master: a 60-year-old man with a square face, fierce triangular eyes, thick eyebrows, white hair and white beard, wearing a purple sect master robe with golden cloud patterns, a tall jade crown, holding a white horsetail whisk. Do not change his hairstyle, beard, crown, or robe color"
+      }
+    },
+    "hufa": {
+      "name": "护法",
+      "title": "执法堂护法",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": "-6%",
+      "pitch": "-20Hz",
+      "anchor": {
+        "zh": "护法（执法堂护法）：50岁男，方脸、剑眉、短须，黑底执法袍，前胸与双袖口大面积金色云纹，腰挂青铜令牌，手持黑色执法尺。不得更换袍色与金纹、不得去除令牌与执法尺、不得变年轻、不得加伤疤",
+        "en": "Hufa the law-enforcement elder: a 50-year-old man with a square face, sword-like eyebrows and a short beard, wearing a long black enforcement robe with large bright golden cloud patterns covering the chest and both cuffs, a bronze token at his waist, holding a black law-enforcement ruler. Do not change his robe color or gold patterns, do not remove the token or the ruler, do not make him younger, do not add scars"
+      }
+    },
+    "narrator": {
+      "name": "旁白",
+      "title": "",
+      "voice": "zh-CN-YunyangNeural",
+      "rate": "+4%"
+    }
+  },
+  "refs": [
+    {
+      "file": "ref-caiji.png",
+      "char": "caiji",
+      "prompt": {
+        "zh": "菜鸡全身立绘：60岁男宗主，白发白须，三角眼浓眉，国字脸，面相凶悍但眼神透出糊涂，紫色宗主袍绣金色云纹，头戴高冠，手持拂尘，站姿，影棚灯光纯色浅色背景，无文字",
+        "en": "Full-body character reference portrait of Caiji, a 60-year-old male cultivator sect master, white hair and white beard, fierce triangular eyes with thick eyebrows, square face, fierce-looking but slightly confused gaze, wearing a purple sect master robe with golden cloud patterns and a tall crown, holding a horsetail whisk, standing pose, studio lighting, plain light background, no text"
+      }
+    },
+    {
+      "file": "ref-caiji-tv.png",
+      "char": "caiji",
+      "prompt": {
+        "zh": "菜鸡三视图：同一人正/侧/背三视图并排，全身，60岁男宗主，白发白须，三角眼浓眉，国字脸，紫色宗主袍绣金色云纹，头戴高冠，手持拂尘，三视图造型完全一致，站姿，影棚灯光纯色浅色背景，无文字",
+        "en": "Turn-around character sheet of Caiji: front view, side view and back view of the same person side by side, full body, a 60-year-old male cultivator sect master, white hair and white beard, fierce triangular eyes with thick eyebrows, square face, wearing a purple sect master robe with golden cloud patterns and a tall crown, holding a horsetail whisk, identical appearance across all three views, standing pose, studio lighting, plain light background, no text"
+      }
+    },
+    {
+      "file": "ref-hufa.png",
+      "char": "hufa",
+      "prompt": {
+        "zh": "护法全身立绘：50岁男执法堂护法，方脸、剑眉、短须，黑底执法袍，前胸与双袖口大面积明亮金色云纹，腰挂青铜令牌，手持黑色执法尺，神情威严沉稳，站姿，影棚灯光纯色浅色背景，无文字",
+        "en": "Full-body character reference portrait of Hufa, a 50-year-old male law-enforcement elder, square face, sword-like eyebrows, short beard, wearing a long black enforcement robe with large bright golden cloud patterns across the chest and both cuffs, a bronze token at his waist, holding a black law-enforcement ruler, stern and composed, standing pose, studio lighting, plain light background, no text"
+      }
+    },
+    {
+      "file": "ref-hufa-tv.png",
+      "char": "hufa",
+      "prompt": {
+        "zh": "护法三视图：同一人正/侧/背三视图并排，全身，50岁男执法堂护法，方脸、剑眉、短须，黑底执法袍，前胸与双袖口大面积明亮金色云纹，腰挂青铜令牌，手持黑色执法尺，神情威严沉稳，三视图造型完全一致，站姿，影棚灯光纯色浅色背景，无文字",
+        "en": "Turn-around character sheet of Hufa: front view, side view and back view of the same person side by side, full body, a 50-year-old male law-enforcement elder, square face, sword-like eyebrows, short beard, wearing a long black enforcement robe with large bright golden cloud patterns across the chest and both cuffs, a bronze token at his waist, holding a black law-enforcement ruler, stern and composed, identical appearance across all three views, standing pose, studio lighting, plain light background, no text"
+      }
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s01-enforce",
+      "title": "执法堂深夜盯上怪事",
+      "type": "image",
+      "image": {
+        "file": "s01-enforce.png",
+        "prompt": {
+          "zh": "深夜的执法堂内景，烛火摇曳，一张宽大书案上摊开一本考勤册，册页在烛光下泛黄，窗外山影朦胧，气氛阴森神秘，无人物，无文字",
+          "en": "Interior of a law-enforcement hall late at night, flickering candlelight, a wide desk with an open attendance register, yellowed pages in the candle glow, hazy mountain shadows outside the window, eerie mysterious mood, no people, no text"
+        }
+      },
+      "video": {
+        "file": "s01-enforce.mp4",
+        "sourceImage": "s01-enforce.png",
+        "outMs": 4000,
+        "actionPrompt": {
+          "en": "Cinematic live-action shot, 35mm film look: inside a dim law-enforcement hall at night, a wide desk with an open attendance register, candle flames flickering and swaying, drifting incense smoke, hazy mountain shadows outside the window. Steady camera with a slow push-in. No text, no watermark, no subtitles."
+        }
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.12,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "audio": [
+        {
+          "role": "narrator",
+          "text": "执法堂最近盯上了一桩怪事——关于弟子王五。",
+          "isNarration": true,
+          "rate": "+0%",
+          "pitch": "-4Hz"
+        }
+      ],
+      "florals": [
+        {
+          "text": "执法堂的怪事",
+          "tMs": 300,
+          "durMs": 2500,
+          "pos": "top-center",
+          "style": "title"
+        }
+      ],
+      "sfx": [
+        "wind"
+      ],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 4000
+      },
+      "verify": {
+        "brightness": "dark"
+      }
+    },
+    {
+      "id": "s02-montage",
+      "title": "护法考勤四连悬案",
+      "type": "montage",
+      "image": {
+        "file": "s02-montage",
+        "altImages": [
+          {
+            "file": "s02a-attendance.png",
+            "camera": {
+              "mode": "zoomIn",
+              "startZoom": 1,
+              "endZoom": 1.15,
+              "startFrac": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "endFrac": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "prompt": {
+              "zh": "一本摊开的考勤册特写，整页密密麻麻全是朱红对勾，无一缺勤，一支朱笔搁在册边，油灯暖光，无人物，册上文字模糊不可辨认",
+              "en": "Close-up of an open attendance register, the entire page densely covered with red check marks, not a single absence, a red brush resting beside the book, warm oil-lamp light, no people, all writing on the page blurred and illegible"
+            }
+          },
+          {
+            "file": "s02b-checkin.png",
+            "camera": {
+              "mode": "zoomIn",
+              "startZoom": 1,
+              "endZoom": 1.18,
+              "startFrac": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "endFrac": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "prompt": {
+              "zh": "修炼打卡册特写，一页页按满整齐的朱红印章，盖得满满当当，印章图案模糊不可辨，晨光从窗格洒入，无人物",
+              "en": "Close-up of a cultivation check-in register, pages stamped full with neat red seal marks, row after row completely stamped, the seal patterns blurred and illegible, morning light through a lattice window, no people"
+            }
+          },
+          {
+            "file": "s02c-hotspring.png",
+            "camera": {
+              "mode": "zoomIn",
+              "startZoom": 1,
+              "endZoom": 1.15,
+              "startFrac": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "endFrac": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "prompt": {
+              "zh": "千里之外的灵泉，热气蒸腾，一名20岁出头的年轻男弟子闭目惬意地泡在温泉里，大众脸，灰蓝色弟子服叠放在池边石头上，发髻微乱，双臂搭在池边，神情放松享受，远处松林覆雪，中景，喜剧氛围",
+              "en": "A distant spirit hot spring with rising steam, a young male disciple in his early twenties soaking in the spring with eyes closed and a relaxed content expression, average plain face, his plain grey-blue disciple robe folded on a stone by the pool edge, slightly messy topknot, arms resting on the pool edge, snowy pine forest in the distance, medium shot, comedic mood"
+            }
+          },
+          {
+            "file": "s02d-rosters.png",
+            "camera": {
+              "mode": "zoomIn",
+              "startZoom": 1,
+              "endZoom": 1.18,
+              "startFrac": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "endFrac": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "prompt": {
+              "zh": "五本部门花名册并排摊开在长案上，每本都用朱笔圈出了同一个名字的位置，册上文字模糊不可辨认，红色圈痕醒目，俯视角度，冷色月光，无人物",
+              "en": "Five department rosters spread side by side on a long desk, each with the same name position circled in red brush, the writing blurred and illegible, the red circles clearly visible, top-down view, cold moonlight, no people"
+            }
+          }
+        ]
+      },
+      "camera": {
+        "mode": "static",
+        "startZoom": 1,
+        "endZoom": 1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "audio": [
+        {
+          "role": "hufa",
+          "text": "考勤册上，他一天没缺……",
+          "isNarration": false,
+          "rate": "-6%",
+          "pitch": "-20Hz",
+          "delayMs": 0
+        },
+        {
+          "role": "hufa",
+          "text": "修炼打卡，周周不落……",
+          "isNarration": false,
+          "rate": "-6%",
+          "pitch": "-20Hz",
+          "delayMs": 0
+        },
+        {
+          "role": "hufa",
+          "text": "可巡山弟子报：他在千里外的灵泉泡温泉？",
+          "isNarration": false,
+          "rate": "-6%",
+          "pitch": "-20Hz",
+          "delayMs": 0
+        },
+        {
+          "role": "hufa",
+          "text": "五个部门的花名册上——都有他的名字！",
+          "isNarration": false,
+          "rate": "-6%",
+          "pitch": "-20Hz",
+          "delayMs": 0
+        }
+      ],
+      "florals": [],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 4000
+      },
+      "verify": {
+        "brightness": "mixed"
+      }
+    },
+    {
+      "id": "s03-hufa-report",
+      "title": "护法禀报分身术",
+      "type": "image",
+      "image": {
+        "file": "s03-hufa-report.png",
+        "refs": [
+          "ref-hufa.png",
+          "ref-hufa-tv.png",
+          "ref-caiji.png",
+          "ref-caiji-tv.png"
+        ],
+        "roles": [
+          "hufa",
+          "caiji"
+        ],
+        "prompt": {
+          "zh": "大殿之上，护法站在殿中抱拳低首向高台上的宗主禀报，神色凝重，一手持执法尺，宗主在案后猛地抬头瞪眼，中景，大殿灯火通明",
+          "en": "In the grand hall, the law-enforcement elder stands in the middle with clasped fists bowing his head, reporting gravely to the sect master on the raised dais, holding his law-enforcement ruler, the sect master jerking his head up with wide staring eyes behind the desk, medium shot, the hall brightly lit by lanterns"
+        }
+      },
+      "video": {
+        "file": "s03-hufa-report.mp4",
+        "sourceImage": "s03-hufa-report.png",
+        "outMs": 7100,
+        "actionPrompt": {
+          "en": "Cinematic live-action shot, 35mm film look: in a grand ancient hall, the law-enforcement elder in black robe with golden cloud patterns bows with clasped fists and reports gravely while the sect master in purple robes and golden crown on the dais jerks his head up, eyes widening in shock. Both characters must look identical to the reference image, same costumes and faces. Steady camera with a slow dolly-in. No text, no watermark, no subtitles."
+        }
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.12,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "audio": [
+        {
+          "role": "hufa",
+          "text": "宗主，弟子王五……怕是会分身术。",
+          "isNarration": false,
+          "rate": "-6%",
+          "pitch": "-20Hz",
+          "delayMs": 0
+        },
+        {
+          "role": "caiji",
+          "text": "分身术？！我天玄宗何时有这等神通！",
+          "isNarration": false,
+          "rate": "+22%",
+          "pitch": "+12Hz",
+          "delayMs": 100
+        }
+      ],
+      "florals": [],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 3000
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s04-hufa-evidence",
+      "title": "护法呈上铁证",
+      "type": "image",
+      "image": {
+        "file": "s04-hufa-evidence.png",
+        "refs": [
+          "ref-hufa.png",
+          "ref-hufa-tv.png"
+        ],
+        "roles": [
+          "hufa"
+        ],
+        "prompt": {
+          "zh": "护法双手呈上一本摊开的花名册，铁证在手，神情严肃坚定，微微抬头望向高台，中近景，大殿灯火",
+          "en": "The law-enforcement elder presenting an open roster with both hands, solid evidence in hand, serious and resolute expression, looking up slightly toward the dais, medium close-up, lantern-lit grand hall"
+        }
+      },
+      "video": {
+        "file": "s04-hufa-evidence.mp4",
+        "sourceImage": "s04-hufa-evidence.png",
+        "outMs": 6300,
+        "actionPrompt": {
+          "en": "Cinematic live-action shot, 35mm film look: the law-enforcement elder in black robe with golden cloud patterns holding out an open roster with both hands as solid proof, serious and resolute, looking up toward the dais. Medium close-up, grand ancient hall, lantern light. Steady camera with a very slow push-in. Character must look identical to the reference image, same costume and face. No text, no watermark, no subtitles."
+        }
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "audio": [
+        {
+          "role": "hufa",
+          "text": "五处挂职、五份月例、考勤还全勤——不是分身，是什么？",
+          "isNarration": false,
+          "rate": "-6%",
+          "pitch": "-20Hz"
+        }
+      ],
+      "florals": [],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 3000
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s05-caiji-archive",
+      "title": "宗主拍案调档案",
+      "type": "image",
+      "image": {
+        "file": "s05-caiji-archive.png",
+        "refs": [
+          "ref-caiji.png",
+          "ref-caiji-tv.png"
+        ],
+        "roles": [
+          "caiji"
+        ],
+        "prompt": {
+          "zh": "菜鸡在案后拍案而起，怒目圆睁，一手指向堂下，案头堆满一摞摞卷宗档案，中近景，大殿灯火通明",
+          "en": "Caiji the sect master rising from behind the desk and slamming it, eyes wide with anger, pointing down the hall with one hand, the desk piled high with stacks of archives and scrolls, medium close-up, lantern-lit grand hall"
+        }
+      },
+      "video": {
+        "file": "s05-caiji-archive.mp4",
+        "sourceImage": "s05-caiji-archive.png",
+        "outMs": 5300,
+        "actionPrompt": {
+          "en": "Cinematic live-action shot, 35mm film look: the sect master in purple robes and golden crown slamming the desk and rising to his feet, eyes blazing, pointing imperiously down the hall, stacks of archives piled on the desk. Medium close-up, grand ancient hall, lantern light. Steady camera with a gentle push-in. Character must look identical to the reference image, same costume and face. No text, no watermark, no subtitles."
+        }
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "audio": [
+        {
+          "role": "caiji",
+          "text": "查！把他的档案给我调出来——我倒要看看，这王五有几副面孔！",
+          "isNarration": false,
+          "rate": "+20%",
+          "pitch": "+8Hz"
+        }
+      ],
+      "florals": [],
+      "sfx": [
+        "thud"
+      ],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 3000
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s06-hufa-schedule",
+      "title": "调度记录同一句话",
+      "type": "image",
+      "image": {
+        "file": "s04-hufa-evidence.png",
+        "reuse": true
+      },
+      "video": {
+        "file": "s04-hufa-evidence.mp4",
+        "sourceImage": "s04-hufa-evidence.png",
+        "inMs": 1000,
+        "outMs": 6100,
+        "actionPrompt": {
+          "en": "reuse of s04-hufa-evidence.mp4, slice 1.0s-6.9s"
+        }
+      },
+      "camera": {
+        "mode": "panUp",
+        "startZoom": 1,
+        "endZoom": 1.12,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.6
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.42
+        }
+      },
+      "audio": [
+        {
+          "role": "hufa",
+          "text": "调度记录上，五个部门写的都是同一句话——『我也需要他』。",
+          "isNarration": false,
+          "rate": "-6%",
+          "pitch": "-20Hz"
+        }
+      ],
+      "florals": [],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 2500
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s07-caiji-who",
+      "title": "宗主质问给谁干活",
+      "type": "image",
+      "image": {
+        "file": "s05-caiji-archive.png",
+        "reuse": true
+      },
+      "video": {
+        "file": "s05-caiji-archive.mp4",
+        "sourceImage": "s05-caiji-archive.png",
+        "inMs": 2500,
+        "outMs": 6000,
+        "actionPrompt": {
+          "en": "reuse of s05-caiji-archive.mp4, slice 2.5s-6.2s"
+        }
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.25,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.35
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.32
+        }
+      },
+      "audio": [
+        {
+          "role": "caiji",
+          "text": "人人都说需要他——那他到底在给谁干活？！",
+          "isNarration": false,
+          "rate": "+18%",
+          "pitch": "+6Hz"
+        }
+      ],
+      "florals": [],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 2000
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s08-hufa-wage",
+      "title": "钱没少花活没人干",
+      "type": "image",
+      "image": {
+        "file": "s04-hufa-evidence.png",
+        "reuse": true
+      },
+      "video": {
+        "file": "s04-hufa-evidence.mp4",
+        "sourceImage": "s04-hufa-evidence.png",
+        "inMs": 2500,
+        "outMs": 8000,
+        "actionPrompt": {
+          "en": "reuse of s04-hufa-evidence.mp4, slice 3.0s-8.3s"
+        }
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.2,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "audio": [
+        {
+          "role": "hufa",
+          "text": "每个部门都按全勤给他发月例——钱没少花，活没人干。",
+          "isNarration": false,
+          "rate": "-6%",
+          "pitch": "-20Hz"
+        }
+      ],
+      "florals": [],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 2500
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s09-open-sunlike",
+      "title": "转折：宗主自己打开SUNLIKE",
+      "type": "product",
+      "product": {
+        "file": "shots/ui-main.png",
+        "source": "raw/界面1.png",
+        "highlight": []
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.25,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "audio": [
+        {
+          "role": "caiji",
+          "text": "上回是五个金牌弟子被拆去杂务……这回倒好，一个人被五个部门拆着用！",
+          "isNarration": false,
+          "rate": "+4%",
+          "pitch": "-6Hz",
+          "delayMs": 0
+        },
+        {
+          "role": "narrator",
+          "text": "这一次，宗主自己把神器打开了——",
+          "isNarration": true,
+          "rate": "+14%",
+          "pitch": "+6Hz",
+          "delayMs": 100
+        }
+      ],
+      "florals": [
+        {
+          "text": "SUNLIKE 智能财务分析报表",
+          "tMs": 500,
+          "durMs": 2600,
+          "pos": "top-center",
+          "style": "title"
+        }
+      ],
+      "sfx": [
+        "ding"
+      ],
+      "transition": {
+        "name": "fadewhite",
+        "durMs": 350
+      },
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 4000
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s10-p1",
+      "title": "真相一：考勤只记了到了",
+      "type": "product",
+      "product": {
+        "file": "shots/ui-attendance.png",
+        "source": "demos/attendance.html",
+        "highlight": []
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.3,
+        "startFrac": {
+          "x": 0.6,
+          "y": 0.6
+        },
+        "endFrac": {
+          "x": 0.45,
+          "y": 0.5
+        }
+      },
+      "audio": [
+        {
+          "role": "narrator",
+          "text": "考勤不会说谎——但考勤只记了『到了』。",
+          "isNarration": true,
+          "rate": "+4%",
+          "pitch": "-2Hz"
+        }
+      ],
+      "florals": [
+        {
+          "text": "考勤 100% · 只记了『到了』",
+          "tMs": 600,
+          "durMs": 2400,
+          "pos": "top-left",
+          "style": "note"
+        }
+      ],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 3300
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s11-p2",
+      "title": "真相二：五部都要他",
+      "type": "product",
+      "product": {
+        "file": "shots/ui-dispatch.png",
+        "source": "demos/dispatch.html",
+        "highlight": []
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.3,
+        "startFrac": {
+          "x": 0.4,
+          "y": 0.5
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "audio": [
+        {
+          "role": "narrator",
+          "text": "五个部门，各自都『需要他』——却没人管他到底做了什么。",
+          "isNarration": true,
+          "rate": "+8%",
+          "pitch": "-2Hz"
+        }
+      ],
+      "florals": [
+        {
+          "text": "5 个部门 · 同一句『我也需要他』",
+          "tMs": 600,
+          "durMs": 2400,
+          "pos": "bottom-right",
+          "style": "note"
+        }
+      ],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 3500
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s12-p3",
+      "title": "真相三：处处幽灵零产出",
+      "type": "product",
+      "product": {
+        "file": "shots/ui-ghost.png",
+        "source": "demos/ghost.html",
+        "highlight": []
+      },
+      "camera": {
+        "mode": "zoomIn",
+        "startZoom": 1,
+        "endZoom": 1.3,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.4
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "audio": [
+        {
+          "role": "narrator",
+          "text": "五处挂职，处处幽灵——什么，都没做成。",
+          "isNarration": true,
+          "rate": "+4%",
+          "pitch": "-4Hz"
+        }
+      ],
+      "florals": [
+        {
+          "text": "五处挂职 · 产出 0",
+          "tMs": 600,
+          "durMs": 2400,
+          "pos": "bottom-right",
+          "style": "impact"
+        }
+      ],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 3100
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s13-ghost",
+      "title": "表情包：宗主石化五面空牌",
+      "type": "image",
+      "image": {
+        "file": "s13-ghost.png",
+        "refs": [
+          "ref-caiji.png",
+          "ref-caiji-tv.png"
+        ],
+        "roles": [
+          "caiji"
+        ],
+        "prompt": {
+          "zh": "喜剧表情包定格：菜鸡扶额低头，一脸石化生无可恋，身后墙上并排挂着五块空荡荡的木质挂职牌，夸张喜剧表情，中景",
+          "en": "Comedy reaction still: Caiji face-palming and hanging his head, petrified and defeated, behind him five empty wooden assignment plaques hanging in a row on the wall, exaggerated comedic expression, medium shot"
+        }
+      },
+      "camera": {
+        "mode": "static",
+        "startZoom": 1,
+        "endZoom": 1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "audio": [],
+      "florals": [
+        {
+          "text": "一个人，五个部门，零产出",
+          "tMs": 200,
+          "durMs": 1300,
+          "pos": "bottom-center",
+          "style": "impact"
+        }
+      ],
+      "sfx": [],
+      "duration": {
+        "strategy": "fixed",
+        "holdMs": 1500
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s14-order",
+      "title": "宗主立新规",
+      "type": "image",
+      "image": {
+        "file": "s14-order.png",
+        "refs": [
+          "ref-caiji.png",
+          "ref-caiji-tv.png"
+        ],
+        "roles": [
+          "caiji"
+        ],
+        "prompt": {
+          "zh": "菜鸡立于高台之上拍案下令，神情威严，一手指向前方，大殿气势庄重，堂下弟子俯首听令，中景",
+          "en": "Caiji the sect master standing on the platform slamming the desk and giving a decisive order, stern and dignified, pointing forward with one hand, the grand hall imposing and solemn, disciples below bowing in obedience, medium shot"
+        }
+      },
+      "video": {
+        "file": "s14-order.mp4",
+        "sourceImage": "s14-order.png",
+        "outMs": 6700,
+        "actionPrompt": {
+          "en": "Cinematic live-action shot, 35mm film look: the sect master in purple robes standing on the platform, slamming the desk and giving a decisive order, stern and dignified, pointing forward emphatically, then raising his fist. Medium shot, grand ancient hall, disciples below bowing. Steady camera with a slow zoom-out. Character must look identical to the reference image, same costume and face. No text, no watermark, no subtitles."
+        }
+      },
+      "camera": {
+        "mode": "zoomOut",
+        "startZoom": 1.1,
+        "endZoom": 1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.42
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "audio": [
+        {
+          "role": "caiji",
+          "text": "从今日起，人事调配一律过报表调度！",
+          "isNarration": false,
+          "rate": "+8%",
+          "pitch": "+4Hz",
+          "delayMs": 0
+        },
+        {
+          "role": "caiji",
+          "text": "再有人抢弟子——扣他三个月月例！",
+          "isNarration": false,
+          "rate": "+10%",
+          "pitch": "+4Hz",
+          "delayMs": 100
+        }
+      ],
+      "florals": [],
+      "sfx": [
+        "thud"
+      ],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 4000
+      },
+      "verify": {
+        "brightness": "light"
+      }
+    },
+    {
+      "id": "s15-endcard",
+      "title": "结尾字幕卡",
+      "type": "textcard",
+      "image": {
+        "file": ""
+      },
+      "background": "0x0b0b1a",
+      "camera": {
+        "mode": "static",
+        "startZoom": 1,
+        "endZoom": 1,
+        "startFrac": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "endFrac": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "audio": [
+        {
+          "role": "narrator",
+          "text": "这就是没有资源调度的代价",
+          "isNarration": true,
+          "rate": "-2%",
+          "pitch": "-2Hz"
+        }
+      ],
+      "florals": [
+        {
+          "text": "SUNLIKE 智能财务分析报表",
+          "tMs": 300,
+          "durMs": 2800,
+          "pos": "top",
+          "style": "slogan"
+        },
+        {
+          "text": "发现你看不见的真相",
+          "tMs": 1100,
+          "durMs": 2100,
+          "pos": "bottom",
+          "style": "slogan"
+        }
+      ],
+      "sfx": [],
+      "duration": {
+        "strategy": "audioFit",
+        "holdMs": 3200
+      },
+      "verify": {
+        "brightness": "dark"
+      }
+    }
+  ]
+}
